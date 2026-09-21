@@ -20,6 +20,7 @@
     const setNavOpen = (open) => {
       links.classList.toggle('show', open);
       toggle.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('nav-open', open);
     };
     toggle.addEventListener('click', () => setNavOpen(!links.classList.contains('show')));
     links.querySelectorAll('a').forEach(a =>
