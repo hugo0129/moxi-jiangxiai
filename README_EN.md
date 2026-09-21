@@ -18,7 +18,7 @@
 
 ---
 
-## 🔭 My Perspective on the "Jiangxi AI Circle"
+## 🔭 My Perspective on the "Jiangxi AI Hub"
 
 ### 1. What It Is vs. What It Is Not
 - **NOT an amphitheater for speculative hype**: We do not engage in empty grand narratives, chase fleeting tech jargon, or run predatory training/middleman schemes;
