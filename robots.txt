@@ -1,4 +1,24 @@
+# Robots.txt for https://jiangxiai.top/
+# Optimized for Baiduspider, Googlebot, Bingbot, and other search crawlers
+
+User-agent: Baiduspider
+Allow: /
+Allow: /img/
+Disallow: /deploy/
+
+User-agent: Googlebot
+Allow: /
+Allow: /img/
+Disallow: /deploy/
+
+User-agent: Bingbot
+Allow: /
+Allow: /img/
+Disallow: /deploy/
+
 User-agent: *
 Allow: /
+Disallow: /deploy/
 
+# XML Sitemap
 Sitemap: https://jiangxiai.top/sitemap.xml
