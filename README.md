@@ -39,13 +39,25 @@ AI 时代赋予了个体前所未有的生产力杠杆。**“一人公司”（
 
 ---
 
-## 💬 交流探讨与连接
+## 💬 交流探讨与支持
 
-欢迎江西籍技术同行、AI 开发者、创业者以及对一人公司（OPC）实战感兴趣的伙伴添加莫西微信，共同交流业务场景与技术实现：
+欢迎江西籍技术同行、AI 开发者、创业者以及对一人公司（OPC）实战感兴趣的伙伴添加莫西微信。如果你觉得笔记内容或社区实践对你有所启发与帮助，也欢迎请莫西喝一杯咖啡，支持我们持续深耕本土生态与记录真实落地！
 
 <div align="center">
-  <img src="img/wechat-qr.webp" width="220" alt="莫西微信二维码" />
-  <p><strong>扫码添加莫西个人微信 · 探讨技术真落地</strong></p>
+  <table>
+    <tr>
+      <td align="center" width="280">
+        <img src="img/wechat-qr.webp" width="180" alt="莫西个人微信" /><br />
+        <strong>添加莫西个人微信</strong><br />
+        <sub>同行交流 · 探讨技术真落地</sub>
+      </td>
+      <td align="center" width="280">
+        <img src="img/coffee-qr.jpg" width="180" alt="请莫西喝一杯咖啡" /><br />
+        <strong>请莫西喝一杯咖啡 ☕</strong><br />
+        <sub>认可与支持 · 助力持续深耕实战</sub>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ---
