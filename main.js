@@ -165,11 +165,17 @@
     const applyFilter = (cat) => {
       activeCat = cat;
       page = 1;
-      const visible = items.filter(it => cat === 'all' || it.dataset.cat === cat);
-      visible.forEach((it, idx) => {
-        it.classList.toggle('hidden', idx >= PER_PAGE);
+      let matchIdx = 0;
+      items.forEach((it) => {
+        const isMatch = (cat === 'all' || it.dataset.cat === cat);
+        if (isMatch) {
+          it.classList.toggle('hidden', matchIdx >= PER_PAGE);
+          matchIdx++;
+        } else {
+          it.classList.add('hidden');
+        }
       });
-      if (visible.length <= PER_PAGE) {
+      if (matchIdx <= PER_PAGE) {
         galleryLoadmore.style.display = 'none';
       } else {
         galleryLoadmore.style.display = 'flex';
@@ -195,12 +201,18 @@
     if (loadMoreBtn) {
       loadMoreBtn.addEventListener('click', () => {
         page++;
-        const visible = items.filter(it => activeCat === 'all' || it.dataset.cat === activeCat);
         const showCount = page * PER_PAGE;
-        visible.forEach((it, idx) => {
-          it.classList.toggle('hidden', idx >= showCount);
+        let matchIdx = 0;
+        items.forEach((it) => {
+          const isMatch = (activeCat === 'all' || it.dataset.cat === activeCat);
+          if (isMatch) {
+            it.classList.toggle('hidden', matchIdx >= showCount);
+            matchIdx++;
+          } else {
+            it.classList.add('hidden');
+          }
         });
-        if (showCount >= visible.length) {
+        if (matchIdx <= showCount) {
           galleryLoadmore.style.display = 'none';
         }
       });
@@ -275,18 +287,17 @@
   const newsTimeline = document.getElementById('newsTimeline');
   if (newsTimeline) {
     const newsEmpty = document.getElementById('newsEmpty');
-    const newsFilters = document.querySelectorAll('.news-filter');
+    const newsTypeTabs = document.querySelectorAll('.news-type-tab');
     const newsTotalCount = document.getElementById('newsTotalCount');
     const newsMediaCount = document.getElementById('newsMediaCount');
     const newsWechatCount = document.getElementById('newsWechatCount');
-    let newsData = [];
-    let newsActiveFilter = 'all';
+    let newsActiveType = 'all';
 
     const badgeLabels = {
-      media: '第三方报道',
-      wechat: '社群记录',
-      event: '活动预告',
-      voice: '行业发声'
+      media: '外界见闻',
+      wechat: '实战笔记',
+      event: '交流预告',
+      voice: '思考发声'
     };
 
     const formatDate = (dateStr) => {
@@ -309,6 +320,7 @@
         const article = document.createElement('article');
         article.className = 'news-item reveal' + (item.featured ? ' featured' : '');
         article.dataset.type = item.sourceType;
+        article.dataset.category = item.category;
         article.dataset.newsId = item.id;
 
         const badgeClass = 'news-badge-' + item.sourceType;
@@ -347,36 +359,43 @@
       }
     };
 
-    const applyNewsFilter = (filter) => {
-      newsActiveFilter = filter;
-      newsFilters.forEach(f => {
-        const isActive = f.dataset.filter === filter;
-        f.classList.toggle('active', isActive);
-        f.setAttribute('aria-pressed', String(isActive));
+    const filterNewsItems = () => {
+      let visibleCount = 0;
+      newsTimeline.querySelectorAll('.news-item').forEach(el => {
+        const matchesType = (newsActiveType === 'all' || el.dataset.type === newsActiveType);
+        el.style.display = matchesType ? '' : 'none';
+        if (matchesType) visibleCount++;
       });
-      const filtered = filter === 'all'
-        ? newsData
-        : newsData.filter(item => item.sourceType === filter);
-      renderNews(filtered);
+      if (newsEmpty) {
+        newsEmpty.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
     };
 
-    newsFilters.forEach(f => {
-      f.addEventListener('click', () => applyNewsFilter(f.dataset.filter));
+    newsTypeTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        newsActiveType = tab.dataset.typeFilter;
+        newsTypeTabs.forEach(t => {
+          const isActive = t === tab;
+          t.classList.toggle('active', isActive);
+          t.setAttribute('aria-selected', String(isActive));
+        });
+        filterNewsItems();
+      });
     });
 
-    // Render from inline data (no fetch needed — works with file:// protocol)
-    if (window.NEWS_DATA && Array.isArray(window.NEWS_DATA)) {
-      // Sort by date descending
-      newsData = window.NEWS_DATA.sort((a, b) => new Date(b.date) - new Date(a.date));
-
-      // Update stats
-      if (newsTotalCount) newsTotalCount.textContent = newsData.length;
-      if (newsMediaCount) newsMediaCount.textContent = newsData.filter(i => i.sourceType === 'media').length;
-      if (newsWechatCount) newsWechatCount.textContent = newsData.filter(i => i.sourceType === 'wechat').length;
-
-      renderNews(newsData);
-    } else if (!newsTimeline.querySelector('.news-item')) {
-      newsTimeline.innerHTML = '<div class="news-loading">数据加载失败，请刷新重试。</div>';
+    // Animate statically rendered items
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      newsTimeline.querySelectorAll('.news-item').forEach(el => io.observe(el));
+    } else {
+      newsTimeline.querySelectorAll('.news-item').forEach(el => el.classList.add('visible'));
     }
   }
 
@@ -384,8 +403,10 @@
   // Keep the same verified partner links on every page without duplicating
   // the footer markup across all static documents.
   const footerContainer = document.querySelector('.footer > .container');
+  const footerDisclaimer = footerContainer && footerContainer.querySelector('.footer-disclaimer');
   const footerBottom = footerContainer && footerContainer.querySelector('.footer-bottom');
-  if (footerContainer && footerBottom && !footerContainer.querySelector('.friend-links')) {
+  const insertTarget = footerDisclaimer || footerBottom;
+  if (footerContainer && insertTarget && !footerContainer.querySelector('.friend-links')) {
     const friendLinks = document.createElement('nav');
     friendLinks.className = 'friend-links';
     friendLinks.setAttribute('aria-label', '友情链接');
@@ -397,7 +418,7 @@
         '<a href="https://www.waytoagi.com/" target="_blank" rel="noopener">WaytoAGI</a>' +
         '<a href="https://www.opc.city/" target="_blank" rel="noopener">OPCxCity</a>' +
       '</div>';
-    footerContainer.insertBefore(friendLinks, footerBottom);
+    footerContainer.insertBefore(friendLinks, insertTarget);
   }
 
   // ---------- Conversion signals ----------

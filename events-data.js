@@ -1,4 +1,69 @@
-window.NEWS_DATA = [
+window.EVENTS_DATA = [
+  {
+    "id": "news-035",
+    "date": "2026-09-14",
+    "sourceType": "wechat",
+    "source": "景德镇AI圈",
+    "title": "景德镇 AI 圈官方账号正式启动：开启瓷都 AI 探索新篇章",
+    "summary": "景德镇 AI 圈官方公众号正式启航，聚焦瓷都本土创客与青年艺术家，探索 AI 与陶瓷文化产业的深度融合与技术实践。",
+    "url": "https://mp.weixin.qq.com/s/XWljg4yEpUkLzJT7Z1u8Ew",
+    "featured": false,
+    "category": "salon",
+    "city": "景德镇 · 瓷都",
+    "categoryLabel": "同城技术沙龙"
+  },
+  {
+    "id": "news-036",
+    "date": "2026-09-12",
+    "sourceType": "wechat",
+    "source": "赣州AI圈",
+    "title": "赣州 AI 圈官方账号正式上线：凝聚赣南 AI 创业力量",
+    "summary": "赣州 AI 圈官方公众号正式上线运营，搭建赣南本土技术开发者与创业者的交流平台，持续推进 AI 落地与同城连接。",
+    "url": "https://mp.weixin.qq.com/s/msSjQhB9bsj8OV6-gK4Q2w",
+    "featured": false,
+    "category": "salon",
+    "city": "赣州 · 赣南",
+    "categoryLabel": "同城技术沙龙"
+  },
+  {
+    "id": "news-034",
+    "date": "2026-09-10",
+    "sourceType": "wechat",
+    "source": "莫西AI",
+    "title": "AI 越接地气，越易结大果｜从澄迈 OPC 下沉乡镇，看懂真正的 AI 落地",
+    "summary": "做事的人在一条路上。从澄迈 OPC 下沉乡镇加乐镇看懂真正的 AI 落地：接地气，结大果，AI 走向地面、离人更近、离真实产业更近。",
+    "url": "https://mp.weixin.qq.com/s/aTwbs0CKkYAwICoxy0On2g",
+    "featured": true,
+    "category": "opc",
+    "city": "澄迈 · 乡镇落地",
+    "categoryLabel": "OPC · 一人公司"
+  },
+  {
+    "id": "news-033",
+    "date": "2026-09-10",
+    "sourceType": "media",
+    "source": "澄迈县科工信局",
+    "title": "实战路演  集中打磨 | 澄迈OPC超级个体进化营助推项目落地",
+    "summary": "中共澄迈县委组织部指导、澄迈县科工信局主办，50余位全国创客导师参会，集中打磨25个AI+OPC项目，助推超级个体与AI应用真实落地。",
+    "url": "https://mp.weixin.qq.com/s/uWeQM2vYZOwcHUWwsej1xg",
+    "featured": true,
+    "category": "opc",
+    "city": "澄迈 · 进化营",
+    "categoryLabel": "OPC · 一人公司"
+  },
+  {
+    "id": "news-037",
+    "date": "2026-08-22",
+    "sourceType": "wechat",
+    "source": "莫西AI",
+    "title": "莫西赴赣州交流：跨城连接赣南本土 AI 实践",
+    "summary": "莫西前往赣州与赣州 AI 圈及本地创客深入交流，面对面探讨一人公司模式、智能体工作流与赣南本土业务落地的结合路径。",
+    "url": "https://mp.weixin.qq.com/s/AWNtDDfx0fjFHuLBa1tWng",
+    "featured": false,
+    "category": "salon",
+    "city": "赣州 · 赣南",
+    "categoryLabel": "同城技术沙龙"
+  },
   {
     "id": "news-025",
     "date": "2026-08-21",
@@ -7,7 +72,10 @@ window.NEWS_DATA = [
     "title": "温州OPC大会的江西声音：AI+OPC，是给每个人每座城的新机会",
     "summary": "江西AI圈、OPCxCity江西代表受邀参加温州人工智能OPC创业生态共建大会，分享江西本地AI与OPC生态的实践。",
     "url": "https://mp.weixin.qq.com/s/gFMXoXoUMrdIZiPVmRe8kg",
-    "featured": true
+    "featured": false,
+    "category": "opc",
+    "city": "温州 · 大会",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-026",
@@ -15,9 +83,12 @@ window.NEWS_DATA = [
     "sourceType": "media",
     "source": "温州市人民政府 · 温州日报",
     "title": "温州为OPC创业者攒了个“生态局”",
-    "summary": "温州报道人工智能OPC创业生态共建大会：全国十城社区共同发起共建公约，来自江西的OPCxCity主理人莫西到场交流。",
+    "summary": "温州市人民政府网公开记录：全国十城社区共同发起《全国人工智能OPC社区共建公约》，来自江西的OPCxCity主理人莫西到场交流。",
     "url": "https://www.wenzhou.gov.cn/col/col1217831/art/2026/art_0fb4351fb4f9461a8d1c9ca104e210f2.html",
-    "featured": true
+    "featured": true,
+    "category": "opc",
+    "city": "温州 · 大会",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-027",
@@ -26,7 +97,11 @@ window.NEWS_DATA = [
     "source": "百度秒哒",
     "title": "江西AI圈 × 百度秒哒合作记录",
     "summary": "江西AI圈与百度秒哒的公开合作记录，原文标题与发布账号以微信页面显示为准。",
-    "url": "https://mp.weixin.qq.com/s/XCOQOa3ElnlrnGtL2zxqYA"
+    "url": "https://mp.weixin.qq.com/s/XCOQOa3ElnlrnGtL2zxqYA",
+    "featured": false,
+    "category": "campus",
+    "city": "江西 · 全省",
+    "categoryLabel": "高校与产学研"
   },
   {
     "id": "news-001",
@@ -34,9 +109,12 @@ window.NEWS_DATA = [
     "sourceType": "media",
     "source": "江西日报",
     "title": "跨越钱塘潮，共造赣鄱浪——江西OPC社区代表团亮相全国首届AI+OPC大会",
-    "summary": "江西OPC社区代表团赴杭州参加首届全国AI+OPC创新发展大会，为江西数字经济破局寻找前沿“星火”。",
+    "summary": "《江西日报》公开记录：江西OPC社区代表团赴杭州参加首届全国AI+OPC创新发展大会，为江西数字经济破局寻找前沿“星火”。",
     "url": "https://mp.weixin.qq.com/s/BuDO4jtmEnqbC1EBn9TMqQ",
-    "featured": true
+    "featured": true,
+    "category": "opc",
+    "city": "杭州 · 大会",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-002",
@@ -45,7 +123,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "江西AI圈·7月线下活动·Codex专题",
     "summary": "Codex从零到一完整安装部署全流程教学，真实落地使用案例拆解与实操演示，限20人小范围深度实操局。",
-    "url": "https://mp.weixin.qq.com/s/de3lXbQHzvllZAARqGja-A"
+    "url": "https://mp.weixin.qq.com/s/de3lXbQHzvllZAARqGja-A",
+    "featured": false,
+    "category": "salon",
+    "city": "南昌 · 市区",
+    "categoryLabel": "同城技术沙龙"
   },
   {
     "id": "news-003",
@@ -54,7 +136,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "江西AI圈｜AI变现之夜 活动报名中！",
     "summary": "江西首场「AI变现之夜」案例拆解，连续三晚面对面拆解真实AI变现案例，从想法到收入，只聊真案例。",
-    "url": "https://mp.weixin.qq.com/s/VUNZuS2nJUPI41C-vWYBoQ"
+    "url": "https://mp.weixin.qq.com/s/VUNZuS2nJUPI41C-vWYBoQ",
+    "featured": false,
+    "category": "salon",
+    "city": "南昌 · 市区",
+    "categoryLabel": "同城技术沙龙"
   },
   {
     "id": "news-004",
@@ -64,7 +150,10 @@ window.NEWS_DATA = [
     "title": "一张图，看懂江西 AI 圈正在共建的本地 AI 生态",
     "summary": "一图说明江西 AI 圈、OPC 联盟、城市活动、赣客松与 AI 夜校的分工和连接方式。",
     "url": "https://mp.weixin.qq.com/s/-iRgQak3PtpbTsMWxRripA",
-    "featured": true
+    "featured": true,
+    "category": "salon",
+    "city": "江西 · 全省",
+    "categoryLabel": "同城技术沙龙"
   },
   {
     "id": "news-005",
@@ -73,7 +162,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "《南昌 AI 圈》线下交流·613",
     "summary": "南昌AI圈6月13日线下交流活动，面对面碰撞AI实战经验与本土落地思路。",
-    "url": "https://mp.weixin.qq.com/s/Qxyh3KI_3mPIgXOpgWOEnw"
+    "url": "https://mp.weixin.qq.com/s/Qxyh3KI_3mPIgXOpgWOEnw",
+    "featured": false,
+    "category": "salon",
+    "city": "南昌 · 市区",
+    "categoryLabel": "同城技术沙龙"
   },
   {
     "id": "news-006",
@@ -82,7 +175,11 @@ window.NEWS_DATA = [
     "source": "南昌西湖发布",
     "title": "2026南昌人工智能OPC创业者生态大会聚焦“一人公司”",
     "summary": "5月30日，2026南昌人工智能OPC创业者生态大会在百力佳数字经济产业园举行，200余名嘉宾共话AI与一人公司创业模式。",
-    "url": "https://m.thepaper.cn/baijiahao_33294150"
+    "url": "https://m.thepaper.cn/baijiahao_33294150",
+    "featured": false,
+    "category": "opc",
+    "city": "南昌 · 西湖区",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-007",
@@ -90,8 +187,12 @@ window.NEWS_DATA = [
     "sourceType": "media",
     "source": "南昌广播电视台",
     "title": "南昌人工智能OPC创业者生态大会举行",
-    "summary": "南昌广播电视台报道2026南昌人工智能OPC创业者生态大会，聚焦“一人公司”创业新模式。",
-    "url": "http://baike.baidu.com/l/gGrwrZ8U"
+    "summary": "南昌广播电视台公开记录2026南昌人工智能OPC创业者生态大会，聚焦“一人公司”创业新模式。",
+    "url": "http://baike.baidu.com/l/gGrwrZ8U",
+    "featured": false,
+    "category": "opc",
+    "city": "南昌 · 西湖区",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-008",
@@ -100,7 +201,11 @@ window.NEWS_DATA = [
     "source": "江西省互联网协会",
     "title": "初夏英雄城，OPC聚创业——2026 南昌人工智能 OPC 创业者生态大会圆满举办",
     "summary": "5月30日，2026南昌人工智能OPC创业者生态大会在百力佳数字经济产业园隆重召开，200余名嘉宾共话AI产业发展新趋势。",
-    "url": "https://mp.weixin.qq.com/s/U8uOfiCjqqOq2UKOTHuJsw"
+    "url": "https://mp.weixin.qq.com/s/U8uOfiCjqqOq2UKOTHuJsw",
+    "featured": false,
+    "category": "opc",
+    "city": "南昌 · 西湖区",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-009",
@@ -109,16 +214,24 @@ window.NEWS_DATA = [
     "source": "江西省数字经济企业协会",
     "title": "江西数企协 | 2026年5月总结",
     "summary": "江西省数字经济企业协会5月工作回顾，涵盖AIGC内容产业赋能城市巡回活动南昌站、AI+数字内容产业招商推介会等多个AI相关活动。",
-    "url": "https://mp.weixin.qq.com/s/jnUMIzq4zYOKoHUrsddSlw"
+    "url": "https://mp.weixin.qq.com/s/jnUMIzq4zYOKoHUrsddSlw",
+    "featured": false,
+    "category": "campus",
+    "city": "南昌 · 市区",
+    "categoryLabel": "高校与产学研"
   },
   {
     "id": "news-028",
     "date": "2026-06-01",
     "sourceType": "media",
-    "source": "大江新闻 · 江西日报",
+    "source": "大江网 · 江西日报",
     "title": "抢占风口！2026南昌人工智能OPC创业者生态大会启幕",
     "summary": "5月30日大会由南昌市西湖区人民政府指导、江西省互联网协会主办，现场百余名行业专家、创业者与高校师生共探AI落地。",
-    "url": "https://jx.ifeng.com/c/8tZKKo8iFqp"
+    "url": "https://jx.ifeng.com/c/8tZKKo8iFqp",
+    "featured": false,
+    "category": "opc",
+    "city": "南昌 · 西湖区",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-010",
@@ -127,7 +240,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "江西AI圈·一周OPC见面会·第二期 开始报名啦！",
     "summary": "每月双周周日上午20人精品小聚，携项目共探AI新机遇，赋能本土AI创业，打破信息壁垒。",
-    "url": "https://mp.weixin.qq.com/s/EQN1xOIKWbLDsxczMr7xFw"
+    "url": "https://mp.weixin.qq.com/s/EQN1xOIKWbLDsxczMr7xFw",
+    "featured": false,
+    "category": "opc",
+    "city": "南昌 · 西湖区",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-011",
@@ -136,7 +253,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "江西AI圈&南昌AI圈5月AI线下沙龙来了！",
     "summary": "滕王阁古玩城线下沙龙，限15席深度交流，探讨OPC与AI的“道与术”，打破信息差，链接同频伙伴。",
-    "url": "https://mp.weixin.qq.com/s/nQ8d7VhjQVFWRcy4Sy5Bnw"
+    "url": "https://mp.weixin.qq.com/s/nQ8d7VhjQVFWRcy4Sy5Bnw",
+    "featured": false,
+    "category": "opc",
+    "city": "南昌 · 滕王阁",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-012",
@@ -145,7 +266,11 @@ window.NEWS_DATA = [
     "source": "浦光星奕",
     "title": "活动回顾 | 超200人赴约！AIGC内容产业赋能城市巡回活动南昌站成功举办！",
     "summary": "2026年5月15日，AIGC内容产业赋能城市巡回活动南昌站在红谷滩区喜来登酒店举办，围绕AI漫剧生产、投流变现、全球出海等主题展开深度分享。",
-    "url": "https://mp.weixin.qq.com/s/LwvcRv7rVPx5nCV1Rot9GQ"
+    "url": "https://mp.weixin.qq.com/s/LwvcRv7rVPx5nCV1Rot9GQ",
+    "featured": false,
+    "category": "campus",
+    "city": "南昌 · 红谷滩",
+    "categoryLabel": "高校与产学研"
   },
   {
     "id": "news-029",
@@ -154,7 +279,11 @@ window.NEWS_DATA = [
     "source": "活动行 · 浦光星奕",
     "title": "AIGC内容产业城市巡回活动-南昌站",
     "summary": "红谷滩区人民政府指导的AIGC内容产业巡回活动南昌站；活动页列明江西AI圈与南昌AI圈为协办单位。",
-    "url": "https://www.huodongxing.com/event/8857451422800"
+    "url": "https://www.huodongxing.com/event/8857451422800",
+    "featured": false,
+    "category": "campus",
+    "city": "南昌 · 红谷滩",
+    "categoryLabel": "高校与产学研"
   },
   {
     "id": "news-030",
@@ -163,7 +292,11 @@ window.NEWS_DATA = [
     "source": "江西软件职业技术大学",
     "title": "第23期WaytoAGI AI切磋大会在我校成功举办",
     "summary": "江西软件职业技术大学联合WaytoAGI社区、南昌AI圈共同承办AI切磋大会，围绕AI工作流展开实战交流。",
-    "url": "https://dei.jxuspt.com/xyxw/474.html"
+    "url": "https://dei.jxuspt.com/xyxw/474.html",
+    "featured": false,
+    "category": "hackathon",
+    "city": "南昌 · 江软大",
+    "categoryLabel": "赣客松 · AI夜校"
   },
   {
     "id": "news-013",
@@ -171,8 +304,12 @@ window.NEWS_DATA = [
     "sourceType": "media",
     "source": "江西日报",
     "title": "江西AI圈见面会：不说原理，只教你怎么用AI赚到第一个100块",
-    "summary": "江西日报报道江西AI圈见面会，聚焦AI实战变现，用AI赚到第一个100块。",
-    "url": "https://mp.weixin.qq.com/s/foOXQKIBMUCUa52GMkm58g"
+    "summary": "《江西日报》公开记录江西AI圈见面会，聚焦AI实战变现，用AI赚到第一个100块。",
+    "url": "https://mp.weixin.qq.com/s/foOXQKIBMUCUa52GMkm58g",
+    "featured": false,
+    "category": "salon",
+    "city": "南昌 · 市区",
+    "categoryLabel": "同城技术沙龙"
   },
   {
     "id": "news-031",
@@ -180,9 +317,12 @@ window.NEWS_DATA = [
     "sourceType": "media",
     "source": "科技日报",
     "title": "江西OPC创业者交流活动在南昌举办",
-    "summary": "科技日报关注江西OPC创业者交流活动，记录创业者围绕政策、AI技术应用、商业落地与资源合作展开交流。",
+    "summary": "《科技日报》公开记录江西OPC创业者交流活动，记录创业者围绕AI技术应用、商业落地与资源合作展开交流。",
     "url": "https://www.stdaily.com/web/gdxw/2026-04/30/content_510706.html",
-    "featured": true
+    "featured": false,
+    "category": "opc",
+    "city": "南昌 · 市区",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-014",
@@ -191,7 +331,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "南昌 AIer 集合！首款 AI 夜校，68 元开启你的 AI 夜生活",
     "summary": "南昌AI圈首款「AI夜校」正式开招，教授AIGC视频导演思维和AIGC海报出图两大核心技能，早鸟价68元。",
-    "url": "https://mp.weixin.qq.com/s/BjrL1YmwMSPwYQqylp7OpQ"
+    "url": "https://mp.weixin.qq.com/s/BjrL1YmwMSPwYQqylp7OpQ",
+    "featured": false,
+    "category": "hackathon",
+    "city": "南昌 · 市区",
+    "categoryLabel": "赣客松 · AI夜校"
   },
   {
     "id": "news-015",
@@ -201,7 +345,10 @@ window.NEWS_DATA = [
     "title": "江西AI圈首场OPC见面会｜实事求是，是OPC创业的第一性原理",
     "summary": "以“一人公司×AI创业×资源对接”为主题，40余位创业者深入交流，发布南昌AI圈夜校计划，探讨OPC创业的真需求与落地路径。",
     "url": "https://mp.weixin.qq.com/s/TvZva_1-poZinTP1bc_z2w",
-    "featured": true
+    "featured": true,
+    "category": "opc",
+    "city": "南昌 · 市区",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-016",
@@ -210,7 +357,11 @@ window.NEWS_DATA = [
     "source": "江西软件职业技术大学",
     "title": "招募！4.26等你来战！AI切磋大会",
     "summary": "WaytoAGI X 江西软件大学 X 南昌AI圈联合举办AI切磋大会，聚焦CLI命令行×飞书工作流实战，60分钟限时创作。",
-    "url": "https://mp.weixin.qq.com/s/TS0EA_2Id5_Q0hGF4BAtig"
+    "url": "https://mp.weixin.qq.com/s/TS0EA_2Id5_Q0hGF4BAtig",
+    "featured": false,
+    "category": "hackathon",
+    "city": "南昌 · 江软大",
+    "categoryLabel": "赣客松 · AI夜校"
   },
   {
     "id": "news-032",
@@ -219,7 +370,24 @@ window.NEWS_DATA = [
     "source": "凤凰网数字经济",
     "title": "“虾涌鹭岛·智启新章”Openclaw × OPC经验分享会在厦门成功举办",
     "summary": "厦门OpenClaw × OPC经验分享会由OPCxCity等联合支持；南昌AI圈作为联合支持方参与跨城生态连接。",
-    "url": "https://web3.ifeng.com/c/8s9zJh5Qzto"
+    "url": "https://web3.ifeng.com/c/8s9zJh5Qzto",
+    "featured": false,
+    "category": "opc",
+    "city": "厦门 · 交流",
+    "categoryLabel": "OPC · 一人公司"
+  },
+  {
+    "id": "news-038",
+    "date": "2026-03-15",
+    "sourceType": "wechat",
+    "source": "宜春AI圈",
+    "title": "宜春 AI 圈第 1 期线下活动成功举办",
+    "summary": "宜春 AI 圈首期线下技术沙龙落地，汇聚本地对 AI 充满热情的开发者与创业者，共同探讨 AI 技术实战与本地化应用。",
+    "url": "https://mp.weixin.qq.com/s/4HwSElQ8Gvu5BJywyNdf6w",
+    "featured": false,
+    "category": "salon",
+    "city": "宜春 · 袁州",
+    "categoryLabel": "同城技术沙龙"
   },
   {
     "id": "news-017",
@@ -227,8 +395,12 @@ window.NEWS_DATA = [
     "sourceType": "media",
     "source": "今视频（江西网络广播电视台）",
     "title": "科技赋能 智汇洪城：江西首场OpenClaw x OPC线下活动在南昌圆满落幕",
-    "summary": "今视频报道3月8日江西首场OpenClaw × OPC线下活动，记录技术实操、嘉宾分享及MiniMax对活动的支持。",
-    "url": "https://share.jxgdw.com/share/media/2991127"
+    "summary": "今视频公开记录3月8日江西首场OpenClaw × OPC线下活动，记录技术实操、嘉宾分享及MiniMax对活动的支持。",
+    "url": "https://share.jxgdw.com/share/media/2991127",
+    "featured": false,
+    "category": "opc",
+    "city": "南昌 · 洪城",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-018",
@@ -238,7 +410,10 @@ window.NEWS_DATA = [
     "title": "首场 OpenClaw x 江西OPC一人公司龙虾线下局｜70人共创，MiniMax加持，AI正在改变江西",
     "summary": "江西首场OpenClaw主题线下活动，70多位小伙伴参与，MiniMax提供算力支持，四位嘉宾多视角分享AI时代的OPC之旅。",
     "url": "https://mp.weixin.qq.com/s/UR9ixGcEXkWVQhBUuzEADA",
-    "featured": true
+    "featured": true,
+    "category": "opc",
+    "city": "南昌 · 市区",
+    "categoryLabel": "OPC · 一人公司"
   },
   {
     "id": "news-019",
@@ -247,7 +422,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "江西AI圈第7期线下活动精彩回顾｜AI圈发展历程首度公开",
     "summary": "“我与AI的故事”主题分享，9岁AI原住民Siri震撼全场，AI漫剧、AI编程实战等精彩内容，AI圈发展历程首度公开。",
-    "url": "https://mp.weixin.qq.com/s/h8pdClIaX92ModFCt_LOBQ"
+    "url": "https://mp.weixin.qq.com/s/h8pdClIaX92ModFCt_LOBQ",
+    "featured": false,
+    "category": "salon",
+    "city": "南昌 · 市区",
+    "categoryLabel": "同城技术沙龙"
   },
   {
     "id": "news-020",
@@ -256,7 +435,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "江西AI圈第6期线下活动精彩回顾｜AI真需求黑客松落地江西",
     "summary": "赣客松第1期活动，坚持“真需求·真落地”原则，十几家企业带着真实痛点来到现场，技术方当场给方案，做离真需求更近的AI黑客松。",
-    "url": "https://mp.weixin.qq.com/s/QyrvjrLSCuDE7ldyCI9OCw"
+    "url": "https://mp.weixin.qq.com/s/QyrvjrLSCuDE7ldyCI9OCw",
+    "featured": false,
+    "category": "hackathon",
+    "city": "南昌 · 市区",
+    "categoryLabel": "赣客松 · AI夜校"
   },
   {
     "id": "news-021",
@@ -265,7 +448,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "江西AI圈第5期跨年活动精彩回顾｜在滕王阁畔，我们共话AI未来",
     "summary": "滕王阁三陆玖跨年聚会，来自各行各业的AI爱好者畅聊AI视频定制、AI智能体、传统行业AI转型，共识“AI转型要从老板开始”。",
-    "url": "https://mp.weixin.qq.com/s/-6D6zUZQQXGKREIqUBXbsg"
+    "url": "https://mp.weixin.qq.com/s/-6D6zUZQQXGKREIqUBXbsg",
+    "featured": false,
+    "category": "salon",
+    "city": "南昌 · 滕王阁",
+    "categoryLabel": "同城技术沙龙"
   },
   {
     "id": "news-022",
@@ -274,7 +461,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "江西AI圈第3期线下活动精彩回顾｜AI短剧组专项交流分享会",
     "summary": "在赣江新区短剧产业基地举办AI短剧专项交流，深入探讨AI短剧制作流程、商业化路径和未来趋势。",
-    "url": "https://mp.weixin.qq.com/s/B-6CXlYSal7nrnjW9xl99Q"
+    "url": "https://mp.weixin.qq.com/s/B-6CXlYSal7nrnjW9xl99Q",
+    "featured": false,
+    "category": "salon",
+    "city": "南昌 · 赣江新区",
+    "categoryLabel": "同城技术沙龙"
   },
   {
     "id": "news-023",
@@ -283,7 +474,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "江西AI圈第2期线下活动精彩回顾｜AI时代的思维碰撞与实践探索",
     "summary": "聚焦AI时代的思维方式与实践应用，多位专家分享AI技术全景、商业应用和未来趋势，涵盖文旅、编程、搜索优化等领域。",
-    "url": "https://mp.weixin.qq.com/s/8eBg2MyqwIknXT7MERrsww"
+    "url": "https://mp.weixin.qq.com/s/8eBg2MyqwIknXT7MERrsww",
+    "featured": false,
+    "category": "salon",
+    "city": "南昌 · 市区",
+    "categoryLabel": "同城技术沙龙"
   },
   {
     "id": "news-024",
@@ -292,6 +487,11 @@ window.NEWS_DATA = [
     "source": "莫西AI",
     "title": "江西AI圈第1期线下活动精彩回顾｜南昌AI圈的星星之火",
     "summary": "南昌 AI 圈第一期线下活动有 30 余人到场，现场分享 AI 短视频实践与本地社群的发起初衷。",
-    "url": "https://mp.weixin.qq.com/s/lnQVCRVsgduF2q7U8sJ-jg"
+    "url": "https://mp.weixin.qq.com/s/lnQVCRVsgduF2q7U8sJ-jg",
+    "featured": false,
+    "category": "salon",
+    "city": "南昌 · 市区",
+    "categoryLabel": "同城技术沙龙"
   }
 ];
+window.NEWS_DATA = window.EVENTS_DATA;

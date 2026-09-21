@@ -11,6 +11,7 @@ Thumbs.db
 *~
 .idea/
 .vscode/
+.workbuddy/
 
 # 临时文件
 *.log
