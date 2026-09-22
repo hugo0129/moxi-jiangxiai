@@ -77,14 +77,6 @@ server {
     root /www/wwwroot/jiangxiai.top;
     index index.html;
 
-    # 兼容历史页面 301 永久重定向（保留 SEO 权重）
-    location = /services.html {
-        return 301 https://$host/solutions.html;
-    }
-    location = /news.html {
-        return 301 https://$host/events.html;
-    }
-
     # SSL 证书配置
     ssl_certificate     /etc/nginx/ssl/jiangxiai.top/www.jiangxiai.top.pem;
     ssl_certificate_key /etc/nginx/ssl/jiangxiai.top/www.jiangxiai.top.key;
