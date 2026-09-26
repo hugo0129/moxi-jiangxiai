@@ -134,7 +134,7 @@ img { max-width: 100%; display: block; }
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: clamp(12px, 1.5vw, 22px);
 }
 .nav-links a {
   font-size: 14.5px;
@@ -154,6 +154,15 @@ img { max-width: 100%; display: block; }
   transition: right .25s;
 }
 .nav-links a:not(.nav-cta):hover::after { right: 0; }
+.nav-links a:not(.nav-cta)[aria-current="page"],
+.nav-links a:not(.nav-cta).active {
+  color: var(--soil-500);
+  font-weight: 600;
+}
+.nav-links a:not(.nav-cta)[aria-current="page"]::after,
+.nav-links a:not(.nav-cta).active::after {
+  right: 0;
+}
 
 .nav-cta {
   padding: 9px 18px;

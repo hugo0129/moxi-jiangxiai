@@ -64,15 +64,28 @@ server {
     }
 
     location / {
-        return 301 https://$host$request_uri;
+        return 301 https://jiangxiai.top$request_uri;
     }
+}
+
+# ---------- 443 端口：www 统一 301 重定向至主域名 ----------
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name www.jiangxiai.top;
+
+    ssl_certificate     /etc/nginx/ssl/jiangxiai.top/www.jiangxiai.top.pem;
+    ssl_certificate_key /etc/nginx/ssl/jiangxiai.top/www.jiangxiai.top.key;
+
+    return 301 https://jiangxiai.top$request_uri;
 }
 
 # ---------- 443 端口：HTTPS 主站 ----------
 server {
     listen 443 ssl http2;
     listen [::]:443 ssl http2;
-    server_name jiangxiai.top www.jiangxiai.top;
+    server_name jiangxiai.top;
+    server_tokens off;
 
     root /www/wwwroot/jiangxiai.top;
     index index.html;

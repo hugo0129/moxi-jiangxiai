@@ -3,23 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>页面未找到｜莫西AI · 智能实战笔记</title>
-  <meta name="description" content="页面不存在或已移动。返回莫西AI · 智能实战笔记首页，或前往实战见闻、生态与技术方案页面。" />
-  <meta name="baidu-site-verification" content="codeva-hpwYsu64LU" />
-  <!-- 搜索引擎自适应与防转码规范 (Baidu / Mobile) -->
-  <meta name="applicable-device" content="pc,mobile" />
-  <meta http-equiv="Cache-Control" content="no-transform" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
-  <!-- Google Search Console 站长验证预留 -->
-  <meta name="google-site-verification" content="" />
+  <title>页面未找到 ｜ 莫西 · 智能实战笔记</title>
+  <meta name="description" content="您访问的页面不存在或已迁移。欢迎查阅《智能实战笔记》其他一人公司与本地 AI 落地实践内容。" />
   <meta name="robots" content="noindex, follow" />
-  <link rel="canonical" href="https://jiangxiai.top/404.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="页面未找到｜莫西AI · 智能实战笔记" />
-  <meta property="og:description" content="页面不存在或已移动。返回江西 AI 圈首页，或前往常用入口。" />
-  <meta property="og:image" content="https://jiangxiai.top/img/og-cover.jpg" />
-  <meta property="og:url" content="https://jiangxiai.top/404.html" />
-  <meta property="og:site_name" content="莫西AI · 智能实战笔记" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="256x256" href="img/jiangxi-ai-icon-official.png" />
@@ -43,26 +29,90 @@
   <!-- 百度统计 -->
   <script>
     var _hmt = _hmt || [];
-    (function () {
+    (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?73ce09a56fa2438a07367a57c97f3c90";
+      hm.src = "https://hm.baidu.com/hm.js?9b380302b1f8acba08eec9e414c227cb";
       var s = document.getElementsByTagName("script")[0];
       s.parentNode.insertBefore(hm, s);
     })();
   </script>
 
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G5CPYK6K0J"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-G5CPYK6K0J');
-  </script>
+  <style>
+    .error-hero {
+      padding: 100px 0 80px;
+      text-align: center;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+    }
+    .error-code {
+      font-size: clamp(72px, 12vw, 120px);
+      font-weight: 900;
+      line-height: 1;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, var(--primary, #ba1a1a) 0%, #85000d 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -2px;
+    }
+    .error-title {
+      font-size: clamp(22px, 3.5vw, 32px);
+      font-weight: 700;
+      color: var(--text-primary, #1e293b);
+      margin-bottom: 16px;
+    }
+    .error-desc {
+      font-size: 16px;
+      color: var(--text-secondary, #64748b);
+      max-width: 580px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .error-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+    .error-nav-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .error-nav-card {
+      background: var(--surface-card, #ffffff);
+      border: 1px solid var(--border-light, #e2e8f0);
+      border-radius: 12px;
+      padding: 16px 20px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: block;
+    }
+    .error-nav-card:hover {
+      border-color: var(--primary, #ba1a1a);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+    .error-nav-card strong {
+      display: block;
+      color: var(--text-primary, #1e293b);
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+    .error-nav-card span {
+      color: var(--text-secondary, #64748b);
+      font-size: 13px;
+    }
+  </style>
 </head>
-<body class="subpage-v3 page-404">
+<body>
   <a class="skip-link" href="#main-content">跳到主要内容</a>
-  <!-- NAV -->
+
+  <!-- ============ NAV ============ -->
   <nav class="nav" id="nav">
     <div class="container nav-inner">
       <a href="index.html" class="brand">
@@ -70,18 +120,19 @@
       </a>
       <div class="nav-links" id="primaryNav">
         <a href="index.html">首页</a>
-        <a href="ecosystem.html">生态观察</a>
-        <a href="opc.html">一人公司实践</a>
+        <a href="opc.html">一人公司(OPC)</a>
         <a href="events.html">实战与见闻</a>
-        <a href="solutions.html">技术落地方案</a>
+        <a href="solutions.html">落地方案</a>
+        <a href="ecosystem.html">生态体系</a>
+        <a href="about.html">关于莫西</a>
         <div class="nav-dropdown">
           <button class="nav-drop-trigger" type="button" aria-haspopup="true" aria-expanded="false">
             更多 <span class="nav-drop-caret" aria-hidden="true"></span>
           </button>
           <div class="nav-drop-menu" role="menu">
-            <a href="about.html" role="menuitem">关于笔记 / 莫西</a>
             <a href="talents.html" role="menuitem">同行名录</a>
             <a href="aidaily.html" role="menuitem">技术早报</a>
+            <a href="changelog.html" role="menuitem">更新日志</a>
           </div>
         </div>
         <a href="index.html#join" class="nav-cta">交流探讨</a>
@@ -92,38 +143,57 @@
     </div>
   </nav>
 
-  <!-- 404 CONTENT -->
-  <main id="main-content" style="min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 120px 24px 80px;">
-    <div>
-      <span style="font-size: 120px; font-family: var(--font-serif); font-weight: 900; color: var(--soil-500); line-height: 1;">404</span>
-      <h1 style="font-family: var(--font-serif); font-size: clamp(24px, 4vw, 40px); margin: 16px 0 12px; color: var(--ink-900);">这个页面不存在</h1>
-      <p style="font-size: 16px; color: var(--ink-500); max-width: 480px; margin: 0 auto 32px; line-height: 1.7;">
-        链接可能已失效，或页面已经移动。<br />返回首页，或直接前往常用入口。
-      </p>
-      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-        <a href="index.html" class="btn btn-primary">返回首页</a>
-        <a href="events.html" class="btn btn-ghost">查看实战见闻</a>
-        <a href="solutions.html" class="btn btn-ghost">了解技术落地方案</a>
+  <main id="main-content">
+    <section class="error-hero">
+      <div class="container">
+        <div class="error-code">404</div>
+        <h1 class="error-title">抱歉，您访问的页面不存在或已迁移</h1>
+        <p class="error-desc">
+          您所请求的链接可能已调整或失效。在近期的域名规范化与架构升级中，部分页面路径已完成重构。建议您通过以下入口继续浏览：
+        </p>
+
+        <div class="error-actions">
+          <a href="index.html" class="btn btn-primary">返回网站首页</a>
+          <a href="opc.html" class="btn btn-ghost">一人公司实践</a>
+        </div>
+
+        <div class="error-nav-grid">
+          <a href="events.html" class="error-nav-card">
+            <strong>实战与见闻 ➔</strong>
+            <span>本地 AI 落地纪实与技术沙龙</span>
+          </a>
+          <a href="solutions.html" class="error-nav-card">
+            <strong>落地方案 ➔</strong>
+            <span>智能体架构与实操工作流</span>
+          </a>
+          <a href="ecosystem.html" class="error-nav-card">
+            <strong>生态体系 ➔</strong>
+            <span>全省城市交流与项目协同脉络</span>
+          </a>
+          <a href="about.html" class="error-nav-card">
+            <strong>关于莫西 ➔</strong>
+            <span>主理人实战历程与研发初心</span>
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
   </main>
 
-  <!-- FOOTER (simplified) -->
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
-    <div class="container">
+    <div class="container footer-inner">
       <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="brand">
-            <img class="brand-logo" src="img/jiangxi-ai-logo-official.webp" width="1440" height="532" alt="江西 AI 圈" loading="lazy" decoding="async" />
+        <div class="footer-col brand-col">
+          <div class="footer-brand">
+            <img class="footer-logo" src="img/jiangxi-ai-logo-official.webp" width="1440" height="532" alt="江西 AI 圈" loading="lazy" />
           </div>
-          <p>扎根赣鄱红土地，记录 AI 落地与同行实践。</p>
+          <p class="footer-desc">《智能实战笔记》由莫西主理，记录本土 AI 技术落地探索与一人公司实战见闻。</p>
         </div>
         <div class="footer-col">
-          <h5>关于笔记</h5>
+          <h5>探索核心</h5>
           <ul>
-            <li><a href="about.html">莫西与 AI 圈</a></li>
-            <li><a href="talents.html">同行名录</a></li>
+            <li><a href="index.html">首页总览</a></li>
+            <li><a href="about.html">关于莫西</a></li>
             <li><a href="events.html">实战见闻</a></li>
             <li><a href="changelog.html">更新日志</a></li>
           </ul>
@@ -133,17 +203,17 @@
           <ul>
             <li><a href="opc.html">一人公司实践（OPC）</a></li>
             <li><a href="ecosystem.html">赣客松技术沙龙</a></li>
-            <li><a href="ecosystem.html">南昌 AI 夜校</a></li>
+            <li><a href="ecosystem.html#skills">技能实操研习</a></li>
             <li><a href="aidaily.html">技术早报</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h5>方案探讨</h5>
           <ul>
-            <li><a href="solutions.html#solutions" aria-label="智能体架构实践">智能体架构实践</a></li>
-            <li><a href="solutions.html#solutions" aria-label="岗位实战演练">岗位实战演练</a></li>
-            <li><a href="solutions.html#solutions" aria-label="视频内容工作流">视频内容工作流</a></li>
-            <li><a href="solutions.html#solutions" aria-label="高校实训交流">高校实训交流</a></li>
+            <li><a href="solutions.html#solutions">智能体架构实践</a></li>
+            <li><a href="solutions.html#solutions">岗位实战演练</a></li>
+            <li><a href="solutions.html#solutions">视频内容工作流</a></li>
+            <li><a href="solutions.html#solutions">高校实训交流</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -151,7 +221,6 @@
           <ul>
             <li><a href="index.html#join">微信直接交流</a></li>
             <li><a href="index.html#city">城市交流发起人</a></li>
-            <li><a href="https://tokendeep.feishu.cn/wiki/RYnHw3zpiim3W9kLOXcctta2n6e?utm_source=jiangxiai&utm_medium=web&utm_campaign=footer&utm_content=footer_kb" target="_blank" rel="noopener">飞书知识库</a></li>
             <li><a href="index.html#join">参与建议反馈</a></li>
           </ul>
         </div>
@@ -168,11 +237,6 @@
     </div>
   </footer>
 
-  <!-- floating contact bubble -->
-  <a href="index.html#join" class="float-cta" aria-label="联系我们">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-    <span>联系我们</span>
-  </a>
   <script src="main.js?v=20260828e"></script>
 </body>
 </html>

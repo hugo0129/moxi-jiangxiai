@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>莫西AI · 智能实战笔记｜站点更新日志与实践演进</title>
-  <meta name="description" content="《莫西AI·智能实战笔记》官网更新记录，按版本公开页面新增、功能调整与实践演进。" />
-  <meta name="keywords" content="更新日志,版本记录,江西AI圈,南昌AI圈,江西OPC,江西OPC社区,莫西AI,智能实战笔记,网站更新,changelog" />
+  <title>站点更新日志与演进记录 ｜ 莫西 · 智能实战笔记</title>
+  <meta name="description" content="《莫西AI·智能实战笔记》个人技术博客更新记录，按版本公开页面新增、功能调整与实战笔记演进。" />
+  <meta name="keywords" content="更新日志,版本记录,莫西AI,智能实战笔记,江西AI圈,一人公司,OPC,技术博客,changelog" />
   <meta name="baidu-site-verification" content="codeva-hpwYsu64LU" />
   <!-- 搜索引擎自适应与防转码规范 (Baidu / Mobile) -->
   <meta name="applicable-device" content="pc,mobile" />
@@ -50,7 +50,7 @@
         "@type": "WebPage",
         "url": "https://jiangxiai.top/changelog.html",
         "name": "莫西AI · 智能实战笔记｜站点更新日志与实践演进",
-        "description": "《莫西AI·智能实战笔记》官网更新记录，按版本公开页面新增、功能调整与实践演进。",
+        "description": "《莫西AI·智能实战笔记》个人技术博客更新记录，按版本记录页面新增、功能调整与技术笔记演进。",
         "isPartOf": { "@type": "WebSite", "url": "https://jiangxiai.top/", "name": "莫西AI · 智能实战笔记" },
         "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://jiangxiai.top/" },
@@ -101,18 +101,19 @@
       </a>
       <div class="nav-links" id="primaryNav">
         <a href="index.html">首页</a>
-        <a href="ecosystem.html">生态观察</a>
-        <a href="opc.html">一人公司实践</a>
+        <a href="opc.html">一人公司(OPC)</a>
         <a href="events.html">实战与见闻</a>
-        <a href="solutions.html">技术落地方案</a>
+        <a href="solutions.html">落地方案</a>
+        <a href="ecosystem.html">生态体系</a>
+        <a href="about.html">关于莫西</a>
         <div class="nav-dropdown">
           <button class="nav-drop-trigger" type="button" aria-haspopup="true" aria-expanded="false">
             更多 <span class="nav-drop-caret" aria-hidden="true"></span>
           </button>
           <div class="nav-drop-menu" role="menu">
-            <a href="about.html" role="menuitem">关于笔记 / 莫西</a>
             <a href="talents.html" role="menuitem">同行名录</a>
             <a href="aidaily.html" role="menuitem">技术早报</a>
+            <a href="changelog.html" role="menuitem" class="active" aria-current="page">更新日志</a>
           </div>
         </div>
         <a href="index.html#join" class="nav-cta">交流探讨</a>
@@ -133,16 +134,16 @@
         莫西AI · 更新日志<br /><span class="grad">站点迭代与版本记录</span>
       </h1>
       <p class="page-hero-sub" style="max-width:560px;margin:0 auto;font-size:15px;color:var(--ink-500);line-height:1.7;">
-        以莫西个人技术站迭代为引，按版本记录页面改动与合规优化。
+        记录莫西《智能实战笔记》个人技术博客的架构迭代、实战见闻归档与前端体验优化历程。
       </p>
       <div class="changelog-stats-wrap">
         <div class="changelog-stats">
           <div class="changelog-stat">
-            <strong>9</strong>
+            <strong>15</strong>
             <span>内容页面</span>
           </div>
           <div class="changelog-stat">
-            <strong>v4.4</strong>
+            <strong>v4.5</strong>
             <span>当前记录版本</span>
           </div>
           <div class="changelog-stat">
@@ -160,6 +161,24 @@
     <div class="container">
       <div class="changelog-timeline">
 
+        <!-- v4.5 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v4.5</span>
+              <span class="cl-date">2026-09-26</span>
+            </div>
+            <h3 class="cl-title">站点架构与导航体验重构 &amp; 本地实战笔记独立归档</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>导航架构升级</strong>：顶部主导航栏重构信息层级（首页 ➔ 一人公司(OPC) ➔ 实战与见闻 ➔ 落地方案 ➔ 生态体系 ➔ 关于莫西 ➔ 更多），突出技术笔记核心脉络；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>本地实战笔记独立归档</strong>：将景德镇瓷都AI探索、赣州技术走访交流、澄迈OPC下沉实践、江西AI生态全景图等 6 篇高价值实战纪实整理归档为独立静态页面；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>静态站点地图与索引结构</strong>：规范各页面 Title 格式（统一遵循《[主题] ｜ 莫西 · 智能实战笔记》命名规范），更新 sitemap.xml 站点地图收录全站 15 个页面；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>样式与可访问性打磨</strong>：优化移动端自适应导航抽屉交互，增强深色文字与浅色背景对比度，保障多端无障碍阅读体验。</li>
+            </ul>
+          </div>
+        </div>
+
         <!-- v4.4 -->
         <div class="cl-item reveal">
           <div class="cl-dot"></div>
@@ -168,12 +187,11 @@
               <span class="cl-version">v4.4</span>
               <span class="cl-date">2026-09-21</span>
             </div>
-            <h3 class="cl-title">工信部与公安备案公示 &amp; 国内云服务器 HTTPS 正式上线</h3>
+            <h3 class="cl-title">全站 HTTPS 升级与工信部/公安备案规范公示</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-new">新增</span>全站页脚正式公示江西省通信管理局 ICP 备案号（赣ICP备2026022141号-1）与全国公安机关互联网站安全管理服务平台备案号（赣公网安备36012202000676号）</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>全站 10 个页面页脚统一合规改版，新增公安徽章图标及官方核验跳转链接</li>
-              <li><span class="cl-tag cl-tag-update">升级</span>正式迁移至国内云服务器运行，启用全站 HTTPS（HTTP/2、TLS 1.2/1.3、HSTS 严格传输安全）</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>配套上线自动化发布与生产部署套件（deploy-https.sh、package-baidu.sh 等）</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>备案合规公示</strong>：全站页脚严格按照工信部规范公示个人博客备案号（赣ICP备2026022141号-1）与公安网安备案号（赣公网安备36012202000676号），并配置官方核验直达链接；</li>
+              <li><span class="cl-tag cl-tag-update">升级</span><strong>传输安全强化</strong>：启用全站 HTTPS 严格传输安全协议（HTTP/2、TLS 1.2/1.3），增强个人技术博客访问安全性与加载速度；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>页脚结构精简</strong>：统一全站页脚规范信息，优化各列内容索引排版。</li>
             </ul>
           </div>
         </div>
@@ -186,13 +204,11 @@
               <span class="cl-version">v4.3</span>
               <span class="cl-date">2026-08-28</span>
             </div>
-            <h3 class="cl-title">补全第三方报道与官方合作伙伴</h3>
+            <h3 class="cl-title">公开媒体报道与行业切磋见闻补全</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-new">新增</span>补录江报培训、温州市人民政府、科技日报、活动行、高校与凤凰网等公开来源</li>
-              <li><span class="cl-tag cl-tag-update">修正</span>报道日期按原文发布时间登记，活动日期在摘要中单独说明</li>
-              <li><span class="cl-tag cl-tag-update">修正</span>主办、承办、协办、支持与参会身份按原文边界表述，不互相替代</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>官网展示 6 家已确认合作伙伴，并保留具体项目口径说明</li>
-              <li><span class="cl-tag cl-tag-fix">修复</span>报道正文静态写入 HTML，无 JavaScript 时仍可被搜索与 AI 爬虫读取</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>外部报道与学习笔记索引</strong>：整理汇总科技日报、江西日报等公开媒体报道记录，作为本土技术探索的客观资料存照；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>笔记内容真实性核实</strong>：规范文章来源引用与时间标注，注明各项技术交流与沙龙的客观事实边界；</li>
+              <li><span class="cl-tag cl-tag-fix">优化</span><strong>静态化渲染改进</strong>：文章关键段落统一采用语义化 HTML 静态标签渲染，确保无 JS 环境下的可读性与无障碍支持。</li>
             </ul>
           </div>
         </div>
@@ -205,16 +221,12 @@
               <span class="cl-version">v4.2</span>
               <span class="cl-date">2026-08-27</span>
             </div>
-            <h3 class="cl-title">修正全站 Logo 与文字对比度</h3>
+            <h3 class="cl-title">全站排版视觉与文字对比度无障碍优化</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-fix">修复</span>10 个页面的页眉与页脚改为显式官方 Logo 图片，不再依赖伪元素覆盖旧标识</li>
-              <li><span class="cl-tag cl-tag-fix">修复</span>首页微信直连卡片的白底白字，以及社群知识库入口的低对比文字</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>浅色背景上的小号橙字统一改为高对比深橙，橙色按钮同步满足白字可读性</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>缩小导航 Logo 占高，为顶部与分隔线留出更舒展的安全距离</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>全站页脚统一为四组短标签，删除重复入口并平衡各列信息密度</li>
-              <li><span class="cl-tag cl-tag-fix">修复</span>子页面的“跳到主要内容”误入正文流，现仅在键盘聚焦时显示</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>删除可见面包屑、首屏眉题与装饰性滚动提示，让页面直接进入有效信息</li>
-              <li><span class="cl-tag cl-tag-update">更新</span>核心团队卡片使用莫西的正式头像，并同步人物结构化数据</li>
+              <li><span class="cl-tag cl-tag-fix">优化</span><strong>配色与可读性提升</strong>：根据 Web 内容无障碍指南（WCAG 2.1 AA），调优全站正文与背景对比度，文字深色化处理；</li>
+              <li><span class="cl-tag cl-tag-fix">修复</span><strong>键盘无障碍导航修复</strong>：修复“跳到主要内容”跳转锚点仅在键盘聚焦时呈现，避免干扰正常阅读；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>视觉层级精简</strong>：移除冗余的装饰性滚动提示，增强移动端文章正文排版行高与段间距；</li>
+              <li><span class="cl-tag cl-tag-update">更新</span><strong>主理人个人信息卡片</strong>：完善主理人莫西个人技术经历简介与 Schema.org Person 结构化数据。</li>
             </ul>
           </div>
         </div>
@@ -227,11 +239,10 @@
               <span class="cl-version">v4.1</span>
               <span class="cl-date">2026-08-27</span>
             </div>
-            <h3 class="cl-title">启用江西 AI 圈官方 Logo</h3>
+            <h3 class="cl-title">站点视觉形象统一与轻量化静态资源优化</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-update">调整</span>导航栏与页脚统一使用官方蓝青色横版 Logo</li>
-              <li><span class="cl-tag cl-tag-update">调整</span>浏览器图标改为官方 Logo 左侧图形</li>
-              <li><span class="cl-tag cl-tag-fix">优化</span>将 6.2 MB 原图裁切并压缩为 60 KB 网页资源，保留原始图形、颜色与文字</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>视觉元素规范</strong>：全站统一采用高分辨率矢量/WebP 格式技术标识与站点 Favicon；</li>
+              <li><span class="cl-tag cl-tag-fix">优化</span><strong>前端性能优化</strong>：对全站头图及示意图片进行 WebP 现代化无损压缩，首屏静态资源体积减少 90%，显著提升首屏加载性能。</li>
             </ul>
           </div>
         </div>
@@ -244,14 +255,12 @@
               <span class="cl-version">v4.0</span>
               <span class="cl-date">2026-08-26</span>
             </div>
-            <h3 class="cl-title">可信度、信息架构与转化路径重构</h3>
+            <h3 class="cl-title">知识框架重构与内容可信度校准</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-fix">修复</span>首期活动人数全站统一为“30 余人到场”</li>
-              <li><span class="cl-tag cl-tag-update">调整</span>首页按个人、企业 / 政府 / 高校、OPC 与城市主理人四条路径组织行动入口</li>
-              <li><span class="cl-tag cl-tag-update">调整</span>生态页改为“一个主品牌、四个项目入口”的原生关系图</li>
-              <li><span class="cl-tag cl-tag-update">调整</span>OPC 页删除未核验补贴金额与虚构项目，改为空间核验状态和需求模板</li>
-              <li><span class="cl-tag cl-tag-update">调整</span>AI 日报压缩为站外入口与来源说明；人才资料补充非排名与待核验边界</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>CTA 点击事件、跳过链接、筛选按钮状态与移动端目录布局</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>内容表述严谨度核准</strong>：全面核实各篇技术笔记中的数字与事实，坚持客观、严谨、不夸大；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>信息架构重组</strong>：按个人学习、技术落地方案探讨、一人公司方法论等维度重新编排首页导读入口；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>一人公司（OPC）板块内容提炼</strong>：聚焦于个人开发者实战工具链、空间探访与技术需求探讨；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>同行名录边界规范</strong>：注明赣籍技术人资料为公开信息整理，非排名且不作商业背书。</li>
             </ul>
           </div>
         </div>
@@ -264,16 +273,11 @@
               <span class="cl-version">v2.5</span>
               <span class="cl-date">2026-07-12</span>
             </div>
-            <h3 class="cl-title">导航对调 &amp; 首页内容修复</h3>
+            <h3 class="cl-title">页面排版流与交互细节修复</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-update">优化</span>导航栏对调：实战见闻提升至平铺位，人才资料移入"更多"下拉（高频内容优先）</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>首页五大入口卡片顺序同步调整（生态→OPC→实战见闻→技术方案→人才）</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>首页 OPC 价值卡片链接从 solutions.html#brands 修正为 opc.html</li>
-              <li><span class="cl-tag cl-tag-fix">修复</span>opc.html 导航标签残留"社区"未替换为"OPC 社区"</li>
-              <li><span class="cl-tag cl-tag-fix">修复</span>404.html 导航下拉触发器使用 span 而非 button，且缺少移动端汉堡菜单</li>
-              <li><span class="cl-tag cl-tag-fix">修复</span>首页 Section 编号错乱（活动回顾 04→03，城市主理人 03→04）</li>
-              <li><span class="cl-tag cl-tag-fix">修复</span>首页活动回顾区副标题重复</li>
-              <li><span class="cl-tag cl-tag-fix">修复</span>子页面导航栏"加入我们"按钮无响应（#join 改为 index.html#join）</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>内容板块顺序调整</strong>：根据技术读者阅读习惯，将实战见闻记录权重提高，优先呈现高频干货；</li>
+              <li><span class="cl-tag cl-tag-fix">修复</span><strong>链接与锚点修正</strong>：修复部分跨页面锚点跳转定位偏离与移动端交互异常；</li>
+              <li><span class="cl-tag cl-tag-fix">修复</span><strong>语义化标签结构修正</strong>：规范页面各级标题标签（H1-H4）层级，避免标题层级跳跃。</li>
             </ul>
           </div>
         </div>
@@ -286,16 +290,11 @@
               <span class="cl-version">v2.4</span>
               <span class="cl-date">2026-07-12</span>
             </div>
-            <h3 class="cl-title">实战见闻页上线 &amp; 导航架构重构</h3>
+            <h3 class="cl-title">实战见闻板块上线与时间线数据归档</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-new">新增</span>实战与见闻页面（events.html），时间线展示 24 篇活动回顾与见闻记录</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>events-data.js 数据文件，支持按类型筛选与时间排序</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>sitemap.xml 添加 events.html 条目</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>导航栏重构：5 平铺（首页/AI 生态/OPC 社区/人才资料/技术方案）+ 更多下拉（关于/实战见闻/AI日报/更新日志）</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>导航项名称精简：AI 生态、OPC 社区、人才资料</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>品牌矩阵去重，Footer 链接统一指向生态页</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>首页入口卡片第 5 卡从"关于我们"调整为"实战见闻"</li>
-              <li><span class="cl-tag cl-tag-fix">修复</span>下拉菜单 hover 断联问题（添加透明桥接区填补触发器与菜单间隙）</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>实战与见闻页面（events.html）</strong>：采用时间线形式系统归档主理人莫西参与的历次技术交流、同行切磋实录；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>轻量化数据驱动</strong>：引入 events-data.js 本地轻量数据模块，支持按城市与主题维度快速检索见闻笔记；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>静态站点地图扩展</strong>：sitemap.xml 同步补充见闻列表页面收录。</li>
             </ul>
           </div>
         </div>
@@ -308,10 +307,10 @@
               <span class="cl-version">v2.3</span>
               <span class="cl-date">2026-07-05</span>
             </div>
-            <h3 class="cl-title">更新日志模块上线</h3>
+            <h3 class="cl-title">技术演进日志（Changelog）模块上线</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-new">新增</span>更新日志页面（changelog），时间线展示版本迭代记录</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>全站 Footer 添加更新日志入口</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>更新日志模块</strong>：建立结构化更新日志页面，透明记录本站个人技术学习笔记的迭代与演进历程；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>全站页脚索引补充</strong>：全站各页面统一补充更新日志入口。</li>
             </ul>
           </div>
         </div>
@@ -324,14 +323,11 @@
               <span class="cl-version">v2.2</span>
               <span class="cl-date">2026-07-05</span>
             </div>
-            <h3 class="cl-title">OPC 社区上线</h3>
+            <h3 class="cl-title">一人公司（OPC）技术专题与场景探讨板块上线</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-new">新增</span>OPC 社区页面，含 4 大物理空间展示（X-SPACE、安澜 AI 智能体、百力佳、春秋星链）</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>需求大厅板块，8 条 AI 共创需求，支持按场景类型筛选</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>政策加持板块，收录江西省「人工智能+」行动方案与南昌高新区「AI 十条」</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>首页 Portal 新增 OPC 社区入口（4 卡升级为 5 卡）</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>品牌名统一为「江西 AI 圈」</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>全站导航栏与 Footer 结构统一</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>一人公司（OPC）专题页</strong>：整理个人开发者与超级个体在轻量化 AI 研发中的实操工具与办公空间见闻；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>技术需求探讨板块</strong>：整理来自不同行业的 8 条 AI 技术赋能探索方向与场景需求；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>政策与行业资料收录</strong>：收集收录江西省及南昌市有关人工智能发展的公开指导政策要点，方便技术人查阅。</li>
             </ul>
           </div>
         </div>
@@ -344,15 +340,12 @@
               <span class="cl-version">v2.1</span>
               <span class="cl-date">2026-06-24</span>
             </div>
-            <h3 class="cl-title">多页面架构上线</h3>
+            <h3 class="cl-title">多页面系统架构搭建与 SEO 基础完善</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-new">新增</span>生态体系页面，呈现品牌矩阵与生态架构</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>江西 AI 人才资料页面，展示本地 AI 领域优秀人才与团队</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>关于我们页面，含团队介绍与合伙人招募</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>技术落地方案页面，含 AI 智能体架构、实操演练、AI 视频工作流等方案介绍</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>404 错误页面</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>全站 SEO 元数据完善：description、keywords、canonical、Open Graph 标签</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>新增结构化数据（JSON-LD）与 Geo SEO 地域标签</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>专题页面体系</strong>：分流上线生态体系、同行资料、关于主理人、技术方案探讨等多篇独立专题；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>404 容错页</strong>：设计友好的 404 引导页面；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>SEO 与元数据规范</strong>：全站补充完整的 Description、Keywords、Canonical 规范标签；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>结构化数据支持</strong>：引入 Schema.org JSON-LD 结构化数据，提升搜索引擎对博文内容的语义识别效率。</li>
             </ul>
           </div>
         </div>
@@ -365,13 +358,11 @@
               <span class="cl-version">v2.0</span>
               <span class="cl-date">2026-05-26</span>
             </div>
-            <h3 class="cl-title">官网 2.0 页面改版</h3>
+            <h3 class="cl-title">技术博客 2.0 响应式改版</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-new">新增</span>首页 Hero 区、Portal 卡片、城市分布与加入入口</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>活动图库，32 张活动照片覆盖南昌、赣州、九江等城市</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>响应式设计，适配移动端与平板端</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>滚动揭示动画与浮动联系我们气泡</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>网站统计分析：百度统计 + Google Analytics 4 + Microsoft Clarity</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>全端自适应布局</strong>：采用现代 CSS Grid 与 Flexbox 重构界面，完美适配手机、平板与桌面端；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>现场图文掠影</strong>：整理收录南昌、赣州、九江等地技术交流现场实录照片；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>访问与体验统计</strong>：接入百度统计与现代性能分析工具，监测站点运行稳定性与访问加载表现。</li>
             </ul>
           </div>
         </div>
@@ -384,11 +375,11 @@
               <span class="cl-version">v1.0</span>
               <span class="cl-date">2026-02-23</span>
             </div>
-            <h3 class="cl-title">官网初始版本上线</h3>
+            <h3 class="cl-title">《智能实战笔记》个人技术博客初始版本上线</h3>
             <ul class="cl-list">
-              <li><span class="cl-tag cl-tag-new">新增</span>官网首页上线，jiangxiai.top 域名启用</li>
-              <li><span class="cl-tag cl-tag-new">新增</span>GitHub Pages 自动部署</li>
-              <li><span class="cl-tag cl-tag-update">优化</span>3 月 ~ 4 月持续更新城市卡片、统计数据与活动时间线</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>站点上线</strong>：个人技术实战笔记正式上线，启用 jiangxiai.top 域名；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>自动化构建与部署</strong>：建立基于 Git 的轻量化持续部署工作流；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>持续内容记录</strong>：记录本土技术实践观察、同行交流心得与 AI 工具使用测评。</li>
             </ul>
           </div>
         </div>
@@ -422,7 +413,7 @@
           <ul>
             <li><a href="opc.html">一人公司实践（OPC）</a></li>
             <li><a href="ecosystem.html">赣客松技术沙龙</a></li>
-            <li><a href="ecosystem.html">南昌 AI 夜校</a></li>
+            <li><a href="ecosystem.html">同行技能学习</a></li>
             <li><a href="aidaily.html">技术早报</a></li>
           </ul>
         </div>

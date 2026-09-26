@@ -134,8 +134,8 @@ window.EVENTS_DATA = [
     "date": "2026-06-25",
     "sourceType": "wechat",
     "source": "莫西AI",
-    "title": "江西AI圈｜AI变现之夜 活动报名中！",
-    "summary": "江西首场「AI变现之夜」案例拆解，连续三晚面对面拆解真实AI变现案例，从想法到收入，只聊真案例。",
+    "title": "江西AI圈｜AI变现之夜 案例研讨纪实",
+    "summary": "面对面拆解真实 AI 落地与变现案例，从原型设计到业务闭环，探讨真需求与技术选型。",
     "url": "https://mp.weixin.qq.com/s/VUNZuS2nJUPI41C-vWYBoQ",
     "featured": false,
     "category": "salon",
@@ -148,7 +148,7 @@ window.EVENTS_DATA = [
     "sourceType": "wechat",
     "source": "莫西AI",
     "title": "一张图，看懂江西 AI 圈正在共建的本地 AI 生态",
-    "summary": "一图说明江西 AI 圈、OPC 联盟、城市活动、赣客松与 AI 夜校的分工和连接方式。",
+    "summary": "一图说明江西 AI 圈、一人公司实践、城市活动、赣客松与技能研习的分工和连接方式。",
     "url": "https://mp.weixin.qq.com/s/-iRgQak3PtpbTsMWxRripA",
     "featured": true,
     "category": "salon",
@@ -238,8 +238,8 @@ window.EVENTS_DATA = [
     "date": "2026-05-24",
     "sourceType": "wechat",
     "source": "莫西AI",
-    "title": "江西AI圈·一周OPC见面会·第二期 开始报名啦！",
-    "summary": "每月双周周日上午20人精品小聚，携项目共探AI新机遇，赋能本土AI创业，打破信息壁垒。",
+    "title": "江西AI圈·一周OPC见面会·第二期 现场交流纪实",
+    "summary": "20人精品项目小聚，携项目共探AI新机遇，探讨本土AI创业实践与信息沉淀。",
     "url": "https://mp.weixin.qq.com/s/EQN1xOIKWbLDsxczMr7xFw",
     "featured": false,
     "category": "opc",
@@ -296,7 +296,7 @@ window.EVENTS_DATA = [
     "featured": false,
     "category": "hackathon",
     "city": "南昌 · 江软大",
-    "categoryLabel": "赣客松 · AI夜校"
+    "categoryLabel": "赣客松 · 技能研习"
   },
   {
     "id": "news-013",
@@ -325,25 +325,12 @@ window.EVENTS_DATA = [
     "categoryLabel": "OPC · 一人公司"
   },
   {
-    "id": "news-014",
-    "date": "2026-04-29",
-    "sourceType": "wechat",
-    "source": "莫西AI",
-    "title": "南昌 AIer 集合！首款 AI 夜校，68 元开启你的 AI 夜生活",
-    "summary": "南昌AI圈首款「AI夜校」正式开招，教授AIGC视频导演思维和AIGC海报出图两大核心技能，早鸟价68元。",
-    "url": "https://mp.weixin.qq.com/s/BjrL1YmwMSPwYQqylp7OpQ",
-    "featured": false,
-    "category": "hackathon",
-    "city": "南昌 · 市区",
-    "categoryLabel": "赣客松 · AI夜校"
-  },
-  {
     "id": "news-015",
     "date": "2026-04-29",
     "sourceType": "wechat",
     "source": "莫西AI",
     "title": "江西AI圈首场OPC见面会｜实事求是，是OPC创业的第一性原理",
-    "summary": "以“一人公司×AI创业×资源对接”为主题，40余位创业者深入交流，发布南昌AI圈夜校计划，探讨OPC创业的真需求与落地路径。",
+    "summary": "以“一人公司×AI创业×资源对接”为主题，40余位创业者深入交流，探讨技术研习与 OPC 创业的真需求与落地路径。",
     "url": "https://mp.weixin.qq.com/s/TvZva_1-poZinTP1bc_z2w",
     "featured": true,
     "category": "opc",
@@ -361,7 +348,7 @@ window.EVENTS_DATA = [
     "featured": false,
     "category": "hackathon",
     "city": "南昌 · 江软大",
-    "categoryLabel": "赣客松 · AI夜校"
+    "categoryLabel": "赣客松 · 技能研习"
   },
   {
     "id": "news-032",
@@ -439,7 +426,7 @@ window.EVENTS_DATA = [
     "featured": false,
     "category": "hackathon",
     "city": "南昌 · 市区",
-    "categoryLabel": "赣客松 · AI夜校"
+    "categoryLabel": "赣客松 · 技能研习"
   },
   {
     "id": "news-021",
