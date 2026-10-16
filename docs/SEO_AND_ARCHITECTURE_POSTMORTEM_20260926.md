@@ -437,44 +437,26 @@ Nginx 官方文档针对 `add_header` 指令做出了极为严苛的继承约束
 
 ### 5.5 日常运营与新文章发布标准 SOP
 
-为防止未来日常发版打破当前建立的规范与合规体系，提供了 **「Mac 本地一键自动发布（推荐）」** 与 **「服务端手动安全部署」** 两种模式：
+为防止日常发版打破当前建立的规范与合规体系，发布统一使用 `deploy/deploy.sh`（与 moxiai.top 同一套做法）。
 
-#### 方案 A：Mac 本地一键发布流水线（推荐 · 极简自动化）
-
-直接在 Mac 本地项目根目录下执行：
+在项目根目录执行（服务器地址写在本机 `deploy/.env`，参考 `deploy/.env.example`）：
 ```bash
-./publish.sh
+./deploy/deploy.sh
 ```
-该脚本全自动执行：
-1. **ICP 合规自检**（自动扫描 `site-release/`，若误写“夜校/68元/报名中/官方合作伙伴”将立即自动拦截中断）；
-2. **纯净防污染打包**（预设 `COPYFILE_DISABLE=1`，排除 `.DS_Store` 和 `._*` 生成 `site.tar.gz` 与 SHA-256）；
-3. **安全上传至服务器**（SCP 上传至 `/root/jiangxi-deploy/`）；
-4. **远程调用安全部署脚本**（SSH 远程调用 `deploy-site.sh`，解压、除杂、赋权 `www-data`、推百度）；
-5. **线上生产健康探测**（curl 自检生产主站 200 与 www 301 状态码）。
+该脚本依次执行：
+1. **ICP 合规自检**（扫描待发布文件，若误写“夜校/68元/报名中/官方合作伙伴”等立即中断）；
+2. **打包**：只打包 git 已跟踪的网页文件（排除 docs/deploy/脚本/说明文档），`COPYFILE_DISABLE=1` 防止 macOS 元数据混入；
+3. **上传并解压到临时目录** `/www/wwwroot/jiangxiai.top.new`，统一属主 `www-data` 与权限 755/644；
+4. **整体替换**：旧版本改名为 `jiangxiai.top.old` 留作回滚，新版本换上（本地删掉的文件线上也会消失）；
+5. **百度主动推送**（服务器上的 `/root/push-baidu.sh`，存在才执行）；
+6. **线上状态检查**（主站 200、www 301）。
 
----
+回滚到上一版（在服务器上执行）：
+```bash
+mv /www/wwwroot/jiangxiai.top /www/wwwroot/jiangxiai.top.bad && mv /www/wwwroot/jiangxiai.top.old /www/wwwroot/jiangxiai.top
+```
 
-#### 方案 B：分步标准化流水线（如需手动发布或无 SSH 自动化密钥）
-
-| 步骤 | 操作环节 | 具体执行命令 / 校验标准 |
-| :--- | :--- | :--- |
-| **Step 1** | **内容撰写与合规自检** | 1. 严格使用公式：`[核心内容] ｜ 莫西 · 智能实战笔记` (≤20字)<br>2. 坚决排除“官方/社区/夜校/报名/招募”等敏感词<br>3. 外部新闻保持外链引用，原创实战采用“结构化摘要+公众号原文”模式 |
-| **Step 2** | **更新 `sitemap.xml`** | 在 `site-release/sitemap.xml` 中追加新页面的 `<url>` 节点，`<lastmod>` 设为当前真实日期 |
-| **Step 3** | **本地纯净打包与上传** | ```bash
-export COPYFILE_DISABLE=1
-(cd site-release && tar --exclude='.DS_Store' --exclude='._*' -czvf ../site.tar.gz *)
-shasum -a 256 site.tar.gz > site.tar.gz.sha256
-scp site.tar.gz deploy-site.sh <登录用户>@<服务器地址>:<部署目录>/
-``` |
-| **Step 4** | **服务器执行安全部署** | ```bash
-# 登录服务器后直接运行专用的安全部署脚本 (绝不覆写 Nginx 配置)
-bash /root/jiangxi-deploy/deploy-site.sh
-``` |
-| **Step 5** | **线上快速验收** | ```bash
-# 验证 301 与 200
-curl -I https://www.jiangxiai.top  # 应返回 301
-curl -I https://jiangxiai.top      # 应返回 200
-``` |
+内容规范照旧：标题公式 `[核心内容] ｜ 莫西 · 智能实战笔记`（≤20字）；新页面在 `sitemap.xml` 中追加 `<url>` 并把 `<lastmod>` 设为真实日期。
 
 ---
 
@@ -486,8 +468,7 @@ curl -I https://jiangxiai.top      # 应返回 200
 | **Web 生产根目录** | `/www/wwwroot/jiangxiai.top/` | 属主必须保持 `www-data:www-data` |
 | **Nginx 配置文件** | `/etc/nginx/conf.d/jiangxiai.top.conf` | 已固化 301 跳转与独立 server 块，严禁被老脚本覆盖 |
 | **SSL 证书路径** | `/etc/nginx/ssl/jiangxiai.top/www.jiangxiai.top.pem`<br>`/etc/nginx/ssl/jiangxiai.top/www.jiangxiai.top.key` | DigiCert DV SAN（同时覆盖 `jiangxiai.top` 和 `www.jiangxiai.top`） |
-| **Mac 一键发布流水线** | 本地 [`publish.sh`](../publish.sh) | 本地一键运行：合规自检 ➔ 纯净打包 ➔ SCP上传 ➔ 远程部署 ➔ 生产探针 |
-| **服务端安全发布脚本** | 本地 [`deploy-site.sh`](../deploy/deploy-site.sh) ➔ `/root/jiangxi-deploy/deploy-site.sh` | 仅解压网页与推百度，绝不覆写 Nginx 配置（替代有风险的老 deploy-https.sh） |
+| **发布脚本** | 本地 [`deploy/deploy.sh`](../deploy/deploy.sh) | 合规自检 ➔ 打包 ➔ 解压到 .new ➔ 旧版留 .old 回滚 ➔ 换上新版 ➔ 推百度 ➔ 状态检查；绝不改 Nginx 配置 |
 | **百度主动推送脚本** | `/root/push-baidu.sh` | 基于 `sitemap.xml` 动态提取，Token 只保存在服务器上，不写入仓库 |
 | **推送日志文件** | `/var/log/push-baidu.log` | 由 Crontab（每天凌晨 04:30）自动追加记录 |
 | **真实历史更新日志** | 本地 `changelog-original.html`<br>本地 `archive/changelog-original-backup.html` | 完整归档 469 行原始创业痕迹，切勿公开发布到 Web 根目录 |

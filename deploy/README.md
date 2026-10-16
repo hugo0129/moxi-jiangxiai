@@ -81,20 +81,20 @@ nginx -t && systemctl restart nginx
 
 ## 六、部署网站
 
-首次部署：
+在 Mac 本地项目根目录执行（与 moxiai.top 同一套做法）：
 
 ```bash
-# 在服务器上配置 SSH key 用于拉取 GitHub 仓库
-ssh-keygen -t ed25519 -C "deploy@jiangxiai.top"
-cat ~/.ssh/id_ed25519.pub
-# 将公钥添加到 GitHub 仓库的 Deploy Keys
-
-# 部署
-chmod +x deploy/deploy.sh
+cp deploy/.env.example deploy/.env   # 首次：填写服务器地址
 ./deploy/deploy.sh
 ```
 
-后续更新只需再次运行 `./deploy.sh`。
+脚本会做合规词检查，只打包 git 已跟踪的网页文件，上传后先解压到 `/www/wwwroot/jiangxiai.top.new`，再把旧版本改名为 `.old` 留作回滚，最后换上新版本，推送百度并检查线上状态。
+
+回滚到上一版（在服务器上执行）：
+
+```bash
+mv /www/wwwroot/jiangxiai.top /www/wwwroot/jiangxiai.top.bad && mv /www/wwwroot/jiangxiai.top.old /www/wwwroot/jiangxiai.top
+```
 
 ## 七、CDN 加速（可选但推荐）
 

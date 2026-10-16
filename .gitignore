@@ -21,5 +21,3 @@ Thumbs.db
 # 本机部署配置（服务器地址等，不进仓库）
 deploy/.env
 .env
-site.tar.gz
-site.tar.gz.sha256
