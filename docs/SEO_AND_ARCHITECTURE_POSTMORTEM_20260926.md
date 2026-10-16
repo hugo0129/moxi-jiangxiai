@@ -185,8 +185,8 @@ $$\text{SEO Title} = \text{[核心内容]} + \text{ ｜ 莫西 · 智能实战�
    - 彻底移除了“首款 AI 夜校，68 元开启你的 AI 夜生活”、“第二期 OPC 见面会报名”等 6 处过期的活动招募卡片。
 2. **重点纪实独立静态成页**：
    在 `site-release/events/` 目录下生成了 6 篇独立的、结构化极佳的静态 HTML 页面：
-   - `events/jingdezhen-ai.html`（景德镇 AI 圈官方账号正式启动：开启瓷都 AI 探索新篇章）
-   - `events/ganzhou-ai-launch.html`（赣州 AI 圈官方账号正式上线：凝聚赣南 AI 创业力量）
+   - `events/jingdezhen-ai.html`（景德镇 AI 圈正式启动：开启瓷都 AI 探索新篇章）
+   - `events/ganzhou-ai-launch.html`（赣州 AI 圈正式上线：凝聚赣南 AI 创业力量）
    - `events/ganzhou-ai-visit.html`（莫西赴赣州交流：跨城连接赣南本土 AI 实践）
    - `events/opc-chengmai-ai.html`（AI 越接地气，越易结大果｜从澄迈 OPC 下沉乡镇，看懂真正的 AI 落地）
    - `events/jiangxi-ai-ecosystem.html`（一张图，看懂江西 AI 圈正在共建的本地 AI 生态）

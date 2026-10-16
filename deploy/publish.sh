@@ -46,6 +46,12 @@ elif [ -f "index.html" ]; then
         DEPLOY_SCRIPT="deploy-site.sh"
     fi
     IS_SUBDIR=0
+    # 只发布 git 已跟踪的网页文件：未跟踪的文件（备份、其他项目、草稿）一律不会被打包上线
+    SITE_FILES=$(git ls-files | grep -vE '^(docs|deploy|\.github|\.workbuddy)/|^\.|\.(sh|md)$|^LICENSE$' || true)
+    if [ -z "$SITE_FILES" ]; then
+        echo "[-] 错误: 未从 git 中找到可发布的网页文件，请在仓库根目录执行！"
+        exit 1
+    fi
 else
     echo "[-] 错误: 未能在当前目录找到网页文件，请在网站根目录执行！"
     exit 1
@@ -64,7 +70,7 @@ for word in "${SENSITIVE_WORDS[@]}"; do
     if [ "$IS_SUBDIR" -eq 1 ]; then
         FOUND=$(grep -rn "$word" "$SITE_ROOT" 2>/dev/null || true)
     else
-        FOUND=$(grep -rn --exclude-dir=".git" --exclude-dir="docs" --exclude-dir=".github" --exclude="*.sh" "$word" . 2>/dev/null || true)
+        FOUND=$(echo "$SITE_FILES" | tr '\n' '\0' | xargs -0 grep -n "$word" 2>/dev/null || true)
     fi
     if [ -n "$FOUND" ]; then
         echo "[-] 警告: 发现敏感合规词汇: '$word'"
@@ -87,14 +93,14 @@ if [ "$IS_SUBDIR" -eq 1 ]; then
     (cd "$SITE_ROOT" && tar --exclude='.DS_Store' --exclude='._*' -czvf ../site.tar.gz *)
     shasum -a 256 site.tar.gz > site.tar.gz.sha256
 else
-    tar --exclude='.git' --exclude='.github' --exclude='docs' --exclude='deploy' --exclude='*.sh' --exclude='site.tar.gz*' --exclude='.DS_Store' --exclude='._*' -czvf site.tar.gz *
+    echo "$SITE_FILES" | tar -czvf site.tar.gz -T -
     shasum -a 256 site.tar.gz > site.tar.gz.sha256
 fi
 echo "[+] 打包成功: site.tar.gz (SHA-256: $(cat site.tar.gz.sha256 | awk '{print $1}'))"
 
 # 步骤 3：上传至服务器
 echo "[3/5] 正在上传 site.tar.gz 与部署脚本至 $REMOTE_HOST:$REMOTE_DEPLOY_DIR/ ..."
-scp site.tar.gz "$DEPLOY_SCRIPT" "$REMOTE_HOST:$REMOTE_DEPLOY_DIR/deploy-site.sh"
+scp site.tar.gz "$DEPLOY_SCRIPT" "$REMOTE_HOST:$REMOTE_DEPLOY_DIR/"
 
 # 步骤 4：远程执行解压部署
 echo "[4/5] 正在触发服务端自动化解压部署流水线..."
