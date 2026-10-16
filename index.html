@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>江西AI圈落地与一人公司 ｜ 莫西 · 智能实战笔记</title>
+  <meta name="description" content="《莫西AI·智能实战笔记》由莫西发起，记录与探讨江西 AI 技术落地实践、一人公司（OPC）探索与同行交流见闻。" />
+  <meta name="keywords" content="江西AI,南昌AI,赣州AI,江西OPC,南昌OPC,江西AI圈,江西AI实战,江西AI技术实践,江西AIGC,江西AI智能体,江西AI落地,江西数字化转型,赣客松,技能实操研习" />
+  <meta name="baidu-site-verification" content="codeva-hpwYsu64LU" />
+  <!-- 搜索引擎自适应与防转码规范 (Baidu / Mobile) -->
+  <meta name="applicable-device" content="pc,mobile" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <!-- Google Search Console 站长验证预留 -->
+  <meta name="google-site-verification" content="" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://jiangxiai.top/" />
+
+  <!-- Geo SEO -->
+  <meta name="geo.region" content="CN-JX" />
+  <meta name="geo.placename" content="江西, 南昌, 赣州, 九江, 宜春, 抚州, 景德镇" />
+  <meta name="geo.position" content="28.6820;115.8579" />
+  <meta name="ICBM" content="28.6820, 115.8579" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="256x256" href="img/jiangxi-ai-icon-official.png" />
+  <link rel="apple-touch-icon" href="img/jiangxi-ai-icon-official.png" />
+
+  <!-- Open Graph / Facebook / WeChat -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jiangxiai.top/" />
+  <meta property="og:title" content="莫西AI · 智能实战笔记｜江西 AI 圈实践观察" />
+  <meta property="og:description" content="记录与探讨江西 AI 技术落地实践、一人公司（OPC）探索与同行交流见闻。" />
+  <meta property="og:image" content="https://jiangxiai.top/img/og-cover.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:site_name" content="莫西AI · 智能实战笔记" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://jiangxiai.top/" />
+  <meta name="twitter:title" content="莫西AI · 智能实战笔记｜江西 AI 圈实践观察" />
+  <meta name="twitter:description" content="记录与探讨江西 AI 技术落地实践、一人公司（OPC）探索与同行交流见闻。" />
+  <meta name="twitter:image" content="https://jiangxiai.top/img/og-cover.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.loli.net" />
+  <link rel="preconnect" href="https://fonts.loli.net" crossorigin />
+  <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260921v1" />
+
+  <!-- 网站统计：Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xbm9ujg700");
+  </script>
+
+  <!-- 百度统计 -->
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?73ce09a56fa2438a07367a57c97f3c90";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+  <!-- Google Analytics 4 -->
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G5CPYK6K0J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G5CPYK6K0J');
+</script>
+  
+
+  <!-- 结构化数据：Organization + WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "智能实战笔记 · 江西 AI 圈",
+        "alternateName": ["智能实战笔记", "江西 AI 圈", "江西 AI", "南昌 AI", "赣州 AI", "九江 AI", "宜春 AI", "抚州 AI", "景德镇 AI", "江西 OPC", "南昌 AI 圈"],
+        "url": "https://jiangxiai.top/",
+        "logo": "https://jiangxiai.top/img/jiangxi-ai-icon-official.png",
+        "description": "记录与探讨江西 AI 技术实战、一人公司（OPC）探索与同行交流见闻的个人实战笔记空间。",
+        "founder": {
+          "@type": "Person",
+          "name": "莫西",
+          "image": "https://jiangxiai.top/img/moxi-avatar.webp"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "南昌", "containedInPlace": { "@type": "AdministrativeArea", "name": "江西省" } },
+          { "@type": "City", "name": "赣州", "containedInPlace": { "@type": "AdministrativeArea", "name": "江西省" } },
+          { "@type": "City", "name": "九江", "containedInPlace": { "@type": "AdministrativeArea", "name": "江西省" } },
+          { "@type": "City", "name": "宜春", "containedInPlace": { "@type": "AdministrativeArea", "name": "江西省" } },
+          { "@type": "City", "name": "抚州", "containedInPlace": { "@type": "AdministrativeArea", "name": "江西省" } },
+          { "@type": "City", "name": "景德镇", "containedInPlace": { "@type": "AdministrativeArea", "name": "江西省" } }
+        ],
+        "keywords": "江西AI, 南昌AI, 赣州AI, 九江AI, 宜春AI, 抚州AI, 景德镇AI, 江西OPC, 南昌OPC, 赣州OPC, 江西AI圈, 南昌AI圈, 赣州AI圈, 江西AI实战, 江西AI技术实践, 江西AIGC, 江西AI智能体, 江西AI落地, 江西数字化转型, 赣客松, 技能实操研习, 江西AI人才",
+        "knowsAbout": ["生成式 AI 内容（AIGC）应用", "AI 智能体", "AI 智能体架构", "数字化转型", "技术落地方案探讨", "生成式引擎优化（GEO）", "具身智能", "AI 芯片", "AI 视频", "产教融合"],
+        "sameAs": [
+          "https://jiangxiai.top"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://jiangxiai.top/",
+        "name": "智能实战笔记 · 江西 AI 圈",
+        "description": "记录与探讨江西 AI 技术实战、一人公司（OPC）探索与同行交流见闻。"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "江西 AI 圈适合什么样的人加入？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "无论你是 AI 从业者、关注AI提效的创业者、在校学生，还是在外地打拼的江西游子，只要你关注 AI、关注江西，都可以找到适合自己的入口。个人进社群，方案探讨走交流通道，想当同城组织者可以申请城市主理人。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "加入社群与交流需要费用吗？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "江西 AI 圈技术交流为个人非营利发起，完全免费开放。线下交流如涉及场地物料等开支，均按参与者 AA 制成本分摊，不设任何营利项目。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "有哪些活动可以参加？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "官网已有南昌、九江、赣州、宜春、抚州和景德镇六座城市的公开实战记录。具体场次、地点与交流纪实可在实战见闻页查阅。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "如何交流探讨 AI 技术落地或项目共创？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "可以通过飞书表单或微信联系发起人莫西，共同交流探讨 AI 技术在业务场景中的落地可行性与技术方案。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "想了解江西 AI 生态的品牌关系？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "江西 AI 圈是核心连接纽带，主要协作板块包括一人公司（OPC）实践、南昌 AI 圈、赣客松和技能实操研习。可在生态体系页查看各板块的公开定位。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "有哪些江西籍 AI 创业者与技术负责人？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "人才资料页按领域整理 10 位江西籍 AI 创业者与技术负责人的公开身份与代表经历，方便查找与认识，非排名。"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="home-v3">
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <img class="brand-logo" src="img/jiangxi-ai-logo-official.webp" width="1440" height="532" alt="江西 AI 圈" decoding="async" />
+      </a>
+      <div class="nav-links" id="primaryNav">
+        <a href="index.html" aria-current="page">首页</a>
+        <a href="opc.html">一人公司(OPC)</a>
+        <a href="events.html">实战与见闻</a>
+        <a href="solutions.html">落地方案</a>
+        <a href="ecosystem.html">生态体系</a>
+        <a href="about.html">关于莫西</a>
+        <div class="nav-dropdown">
+          <button class="nav-drop-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            更多 <span class="nav-drop-caret" aria-hidden="true"></span>
+          </button>
+          <div class="nav-drop-menu" role="menu">
+            <a href="talents.html" role="menuitem">同行名录</a>
+            <a href="aidaily.html" role="menuitem">技术早报</a>
+            <a href="changelog.html" role="menuitem">更新日志</a>
+          </div>
+        </div>
+        <a href="#join" class="nav-cta">交流探讨</a>
+      </div>
+      <button class="nav-toggle" aria-label="菜单" aria-expanded="false" aria-controls="primaryNav" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="container hero-inner hero-layout">
+      <div class="hero-copy">
+        <h1 class="hero-title"><span>莫西AI</span><br />智能实战笔记<br />江西 AI 圈实践观察</h1>
+        <p class="hero-sub">以莫西一线研发与实战为引，记录本地落地思考，连接同行伙伴。</p>
+        <div class="hero-actions">
+          <a href="https://my.feishu.cn/share/base/form/shrcnmAKeHs4OrGC1ptZo3Zmjfb?utm_source=jiangxiai&utm_medium=web&utm_campaign=enterprise&utm_content=hero" target="_blank" rel="noopener" class="btn btn-primary">
+            <span>探讨落地方案</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://my.feishu.cn/share/base/form/shrcnmAKeHs4OrGC1ptZo3Zmjfb?utm_source=jiangxiai&amp;utm_medium=web&amp;utm_campaign=join&amp;utm_content=hero_individual" target="_blank" rel="noopener" class="btn btn-ghost">同行交流与加入</a>
+        </div>
+        <a class="hero-founder" href="about.html#team">
+          <strong>发起人：莫西</strong>
+          <span>近 10 年一线互联网研发与技术管理经验</span>
+        </a>
+      </div>
+
+      <aside class="hero-proof" aria-label="江西 AI 圈真实活动现场">
+        <figure class="hero-photo">
+          <img src="img/gallery-02-nc1.webp" width="1080" height="720" alt="南昌 AI 圈第二期线下活动合影" fetchpriority="high" />
+          <figcaption>
+            <strong>南昌 AI 圈 · 第二期线下活动</strong>
+          </figcaption>
+        </figure>
+        <div class="hero-city-rail" aria-label="已开展活动的六个城市">
+          <span>南昌</span><span>九江</span><span>赣州</span><span>宜春</span><span>抚州</span><span>景德镇</span>
+        </div>
+      </aside>
+
+      <ul class="hero-stats" aria-label="官网公开记录，更新至 2026 年 9 月">
+        <li><strong>34</strong><span>条实战笔记与外界见闻</span></li>
+        <li><strong>34</strong><span>组公开交流实录</span></li>
+        <li><strong>6</strong><span>座技术交流城市</span></li>
+        <li><strong>2025.08</strong><span>从南昌发起记录</span></li>
+      </ul>
+      <p class="hero-data-note">免责声明：本站为莫西个人非经营性技术笔记，所载内容均来自公开渠道，不提供任何商业服务或经营性承诺。</p>
+    </div>
+  </header>
+
+  <!-- ============ PUBLIC PROOF ============ -->
+  <section class="section home-proof" aria-labelledby="proofTitle">
+    <div class="container">
+      <div class="proof-heading">
+        <div>
+          <span class="section-tag">01 · 交流实录</span>
+          <h2 class="section-title" id="proofTitle">公开实战与交流实录</h2>
+        </div>
+        <a href="events.html" class="proof-all">查看 34 篇实战与见闻</a>
+      </div>
+      <div class="proof-grid">
+        <a class="proof-story" href="https://mp.weixin.qq.com/s/BuDO4jtmEnqbC1EBn9TMqQ" target="_blank" rel="noopener">
+          <div class="proof-meta">
+            <span class="proof-pillar-badge opc">一人公司 · 跨城交流</span>
+            <time>2026.07.10 · 江西日报公开记录</time>
+          </div>
+          <h3>跨越钱塘潮，共造赣鄱浪——一人公司实践代表团亮相全国首届AI+OPC大会</h3>
+          <p>《江西日报》公开记录：一人公司实践代表团赴杭州参加首届全国AI+OPC大会，为本地数字经济寻找破局“星火”。</p>
+          <span class="proof-link">查看原文记录 →</span>
+        </a>
+        <a class="proof-story" href="https://www.wenzhou.gov.cn/col/col1217831/art/2026/art_0fb4351fb4f9461a8d1c9ca104e210f2.html" target="_blank" rel="noopener">
+          <div class="proof-meta">
+            <span class="proof-pillar-badge gov">城市共建 · 十城公约</span>
+            <time>2026.08.19 · 温州市人民政府网</time>
+          </div>
+          <h3>温州为OPC创业者攒了个“生态局” · 全国十城共建公约</h3>
+          <p>温州市人民政府官网公开记录：全国十城社区共同发起《全国人工智能OPC社区共建公约》，来自江西的OPCxCity主理人莫西到场交流。</p>
+          <span class="proof-link">查看原文记录 →</span>
+        </a>
+        <a class="proof-story" href="https://mp.weixin.qq.com/s/uWeQM2vYZOwcHUWwsej1xg" target="_blank" rel="noopener">
+          <div class="proof-meta">
+            <span class="proof-pillar-badge tech">实战进化 · 落地路演</span>
+            <time>2026.09.10 · 澄迈县科工信局</time>
+          </div>
+          <h3>实战路演 集中打磨 | 澄迈OPC超级个体进化营助推项目落地</h3>
+          <p>澄迈县科工信局公开记录：50余位全国创客与导师参会，集中打磨25个AI+OPC项目，助推超级个体与AI应用真实落地。</p>
+          <span class="proof-link">查看原文记录 →</span>
+        </a>
+      </div>
+      <aside class="home-partners" aria-labelledby="home-partners-title">
+        <div class="home-partners-copy">
+          <strong id="home-partners-title">交流与支持伙伴</strong>
+          <span>技术 · 交流 · 实践探索 · 城市共建</span>
+        </div>
+        <ul class="partner-roster" aria-label="交流与支持伙伴名单">
+          <li>MiniMax</li>
+          <li>百度秒哒</li>
+          <li>WaytoAGI</li>
+          <li>江西软件职业技术大学</li>
+          <li>浦光星奕</li>
+          <li>OPCxCity</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ VALUE / WHO IS THIS FOR ============ -->
+  <section class="section section-value" id="value">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag">02 · 探讨方向</span>
+        <h2 class="section-title">选择一个探讨与交流方向</h2>
+        <p class="section-sub">按你的关注方向直达对应入口，减少来回沟通。</p>
+      </div>
+
+      <div class="value-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.5"/><path d="M2 21c0-3.5 3-6 7-6s7 2.5 7 6"/><circle cx="17" cy="6" r="2.5"/><path d="M22 18c0-2.5-2-4.5-5-4.5"/></svg>
+          </div>
+          <h3>如果你是 AI 开发者或学习者</h3>
+          <p>加入江西AI实战与开发者网络，探讨江西AI技术实践，也参与开源与实战共创。</p>
+          <ul>
+            <li>江西本地与在外 AI 技术人连接</li>
+            <li>赣客松技术实践与案例探讨</li>
+            <li>同城沙龙与技术实践网络</li>
+          </ul>
+          <a href="https://my.feishu.cn/share/base/form/shrcnmAKeHs4OrGC1ptZo3Zmjfb?utm_source=jiangxiai&amp;utm_medium=web&amp;utm_campaign=join&amp;utm_content=value_individual" target="_blank" rel="noopener" class="value-cta">技术同行交流与加入</a>
+        </div>
+
+        <div class="value-card featured">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V9l9-6 9 6v12"/><path d="M9 21v-7h6v7"/></svg>
+          </div>
+          <h3>如果你在探索业务落地方案</h3>
+          <p>聚焦江西AI落地与企业数字化转型探讨，共同探讨可行的 AI 落地实施路径。</p>
+          <ul>
+            <li>从技术选型到实施路径探讨</li>
+            <li>AI 智能体 / 本地部署 / 工作流提效方案</li>
+            <li>技术落地案例与经验复盘</li>
+          </ul>
+          <a href="solutions.html" class="value-cta">查看落地方案探讨</a>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          </div>
+          <h3>如果你是一人公司（OPC）实践者</h3>
+          <p>走访南昌OPC与江西OPC创业空间，让一人公司不再单打独斗。</p>
+          <ul>
+            <li>江西 OPC 实践与空间名录</li>
+            <li>实践需求与项目共创探讨</li>
+            <li>技能研习与线下见面会</li>
+          </ul>
+          <a href="opc.html" class="value-cta">了解 OPC 实践</a>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 22V8l8-5 8 5v14"/><path d="M4 22h16M9 22v-6h6v6"/><path d="M2 8h20"/></svg>
+          </div>
+          <h3>如果你是高校 / 机构 / 组织</h3>
+          <p>交流前沿技术演进，分享产业实践案例，探讨公益性产教融合。</p>
+          <ul>
+            <li>公益技术分享与讲座交流</li>
+            <li>高校与技术社区的交流实录</li>
+            <li>AI 普及与前沿知识分享</li>
+          </ul>
+          <a href="about.html#partner" class="value-cta">探讨技术交流</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section section-gallery" id="gallery">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag">03 · 现场记录</span>
+        <h2 class="section-title">每一张照片，都有地点和现场</h2>
+        <p class="section-sub">32 组现场记录，来自南昌、九江、赣州、宜春、抚州与景德镇。</p>
+      </div>
+
+      <div class="gallery-filters" id="galleryFilters">
+        <button class="g-filter active" data-filter="all">全部</button>
+        <button class="g-filter" data-filter="city">城市 AI 圈</button>
+        <button class="g-filter" data-filter="ganke">赣客松 / OPC</button>
+        <button class="g-filter" data-filter="enterprise">企业 / 培训</button>
+        <button class="g-filter" data-filter="campus">高校 / 党政</button>
+        <button class="g-filter" data-filter="ecosystem">生态 / 大厂</button>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- city -->
+        <figure class="g-item" data-cat="city">
+          <picture>
+  <source srcset="img/gallery-02-nc1.webp" type="image/webp" />
+  <img src="img/gallery-02-nc1.webp" alt="南昌 AI 圈 第二期线下活动" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">南昌</span>南昌 AI 圈 · 第二期线下活动</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="city">
+          <picture>
+  <source srcset="img/gallery-01-nc2.webp" type="image/webp" />
+  <img src="img/gallery-01-nc2.webp" alt="南昌 AI 圈 第一期线下活动" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">南昌</span>南昌 AI 圈 · 第一期线下活动</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="city">
+          <picture>
+  <source srcset="img/gallery-03-ncshort.webp" type="image/webp" />
+  <img src="img/gallery-03-ncshort.webp" alt="南昌 AI 圈 短剧专题" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">南昌</span>短剧专题线下活动</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="city">
+          <picture>
+  <source srcset="img/gallery-04-jj1.webp" type="image/webp" />
+  <img src="img/gallery-04-jj1.webp" alt="九江 AI 圈 第一期" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">九江</span>九江 AI 圈 · 第一期</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="city">
+          <picture>
+  <source srcset="img/gallery-05-newyear-gz.webp" type="image/webp" />
+  <img src="img/gallery-05-newyear-gz.webp" alt="南昌 AI 圈 公历跨年" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">南昌</span>公历跨年线下活动</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="city">
+          <picture>
+  <source srcset="img/gallery-07-newyear-nl.webp" type="image/webp" />
+  <img src="img/gallery-07-newyear-nl.webp" alt="南昌 AI 圈 农历跨年" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">南昌</span>农历跨年线下活动</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="city">
+          <picture>
+  <source srcset="img/gallery-08-ganzhou1.webp" type="image/webp" />
+  <img src="img/gallery-08-ganzhou1.webp" alt="赣州 AI 圈 第一期" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">赣州</span>赣州 AI 圈 · 第一期</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="city">
+          <picture>
+  <source srcset="img/gallery-09-fz1.webp" type="image/webp" />
+  <img src="img/gallery-09-fz1.webp" alt="抚州 AI 圈 第一期" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">抚州</span>抚州 AI 圈 · 第一期</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="city">
+          <picture>
+  <source srcset="img/gallery-10-yc1.webp" type="image/webp" />
+  <img src="img/gallery-10-yc1.webp" alt="宜春 AI 圈 第一期" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">宜春</span>宜春 AI 圈 · 第一期</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="city">
+          <picture>
+  <source srcset="img/gallery-12-night1.webp" type="image/webp" />
+  <img src="img/gallery-12-night1.webp" alt="南昌 AI 实战研习 第一期" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">研习</span>南昌 AI 实战研习 · 第一期</figcaption>
+        </figure>
+
+        <!-- ganke / opc -->
+        <figure class="g-item" data-cat="ganke">
+          <picture>
+  <source srcset="img/gallery-06-ganke1.webp" type="image/webp" />
+  <img src="img/gallery-06-ganke1.webp" alt="赣客松 第一期线下活动" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">赣客松</span>赣客松 · 第一期线下活动</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="ganke">
+          <picture>
+  <source srcset="img/gallery-13-opc-meet.webp" type="image/webp" />
+  <img src="img/gallery-13-opc-meet.webp" alt="一周 OPC 见面会" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">OPC</span>首场一周 OPC 见面会（预见独角兽）</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="ganke">
+          <picture>
+  <source srcset="img/gallery-14-openclaw.webp" type="image/webp" />
+  <img src="img/gallery-14-openclaw.webp" alt="OpenClaw 龙虾线下实操" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">OpenClaw</span>江西首场 OpenClaw 龙虾线下实操（与 MiniMax 合作）</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="ganke">
+          <picture>
+  <source srcset="img/gallery-18-hangzhou.webp" type="image/webp" />
+  <img src="img/gallery-18-hangzhou.webp" alt="杭州龙虾活动" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">杭州</span>杭州龙虾活动 · 同台分享 OpenClaw</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="ganke">
+          <picture>
+  <source srcset="img/gallery-27-opc-xm.webp" type="image/webp" />
+  <img src="img/gallery-27-opc-xm.webp" alt="OPC 中国行走进厦门" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">厦门</span>OPC 中国行走进厦门</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="ganke">
+          <picture>
+  <source srcset="img/gallery-26-xiamen.webp" type="image/webp" />
+  <img src="img/gallery-26-xiamen.webp" alt="走进厦门人工智能产业园" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">厦门</span>走进福建厦门人工智能产业园孵化器</figcaption>
+        </figure>
+
+        <!-- enterprise -->
+        <figure class="g-item" data-cat="enterprise">
+          <picture>
+  <source srcset="img/gallery-20-bossclass.webp" type="image/webp" />
+  <img src="img/gallery-20-bossclass.webp" alt="企业老板班" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">老板班</span>企业老板班 · 四十多位本土企业老板</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="enterprise">
+          <picture>
+  <source srcset="img/gallery-11-wechat.webp" type="image/webp" />
+  <img src="img/gallery-11-wechat.webp" alt="微信生态全域专题" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">实战</span>微信生态全域（月入 10 万+）专题</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="enterprise">
+          <picture>
+  <source srcset="img/gallery-16-hefei.webp" type="image/webp" />
+  <img src="img/gallery-16-hefei.webp" alt="合肥 AI 创新增长峰会" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">合肥</span>合肥 AI 未来商业暨产业创新增长峰会</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="enterprise">
+          <picture>
+  <source srcset="img/gallery-15-hust.webp" type="image/webp" />
+  <img src="img/gallery-15-hust.webp" alt="华中科技大学 AI 创业峰会" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">武汉</span>华中科技大学 AI 创业峰会</figcaption>
+        </figure>
+
+        <!-- campus / party / community -->
+        <figure class="g-item" data-cat="campus">
+          <picture>
+  <source srcset="img/gallery-23-waytoagi.webp" type="image/webp" />
+  <img src="img/gallery-23-waytoagi.webp" alt="WaytoAGI × 南昌 AI 圈 × 江西软件职业技术大学" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">江软</span>WaytoAGI × 南昌 AI 圈 × 江西软件职业技术大学</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="campus">
+          <picture>
+  <source srcset="img/gallery-24-jxau.webp" type="image/webp" />
+  <img src="img/gallery-24-jxau.webp" alt="江西农业大学授课" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">江农大</span>江西农业大学授课</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="campus">
+          <picture>
+  <source srcset="img/gallery-25-jxsl.webp" type="image/webp" />
+  <img src="img/gallery-25-jxsl.webp" alt="江西水利电力大学 AIGC 专题班" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">水电大</span>江西水利电力大学 AIGC 专题班</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="campus">
+          <picture>
+  <source srcset="img/gallery-32-renmin.webp" type="image/webp" />
+  <img src="img/gallery-32-renmin.webp" alt="走进中国人民大学" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">人大</span>走进中国人民大学</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="campus">
+          <picture>
+  <source srcset="img/gallery-31-hanyang.webp" type="image/webp" />
+  <img src="img/gallery-31-hanyang.webp" alt="韩国汉阳大学官方邀请分享" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">韩国</span>韩国汉阳大学官方邀请分享</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="campus">
+          <picture>
+  <source srcset="img/gallery-29-party.webp" type="image/webp" />
+  <img src="img/gallery-29-party.webp" alt="AI 走进党校" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">党政</span>AI 走进党校</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="campus">
+          <picture>
+  <source srcset="img/gallery-30-community.webp" type="image/webp" />
+  <img src="img/gallery-30-community.webp" alt="AI 走进社区" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">社区</span>AI 走进社区</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="campus">
+          <picture>
+  <source srcset="img/gallery-19-honggutan.webp" type="image/webp" />
+  <img src="img/gallery-19-honggutan.webp" alt="红谷滩区政府 AIGC 活动" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">政府</span>红谷滩区政府指导 AIGC 活动</figcaption>
+        </figure>
+
+        <!-- ecosystem / 大厂 -->
+        <figure class="g-item" data-cat="ecosystem">
+          <picture>
+  <source srcset="img/gallery-17-tencent.webp" type="image/webp" />
+  <img src="img/gallery-17-tencent.webp" alt="与腾讯鄂豫赣区域领导交流" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">腾讯</span>与腾讯鄂豫赣区域领导交流 AI 圈合作</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="ecosystem">
+          <picture>
+  <source srcset="img/gallery-21-qingchun.webp" type="image/webp" />
+  <img src="img/gallery-21-qingchun.webp" alt="第九届青春影像分享" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">青春影像</span>第九届「青春影像」分享嘉宾</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="ecosystem">
+          <picture>
+  <source srcset="img/gallery-22-unicom.webp" type="image/webp" />
+  <img src="img/gallery-22-unicom.webp" alt="联通沃派" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">联通</span>「青春影像」联通沃派</figcaption>
+        </figure>
+        <figure class="g-item" data-cat="ecosystem">
+          <picture>
+  <source srcset="img/gallery-28-spring.webp" type="image/webp" />
+  <img src="img/gallery-28-spring.webp" alt="AI 新春晚会十佳节目" loading="lazy"  />
+</picture>
+          <figcaption><span class="g-tag">十佳</span>AI 新春晚会十佳节目</figcaption>
+        </figure>
+      </div>
+
+      <div class="gallery-loadmore" id="galleryLoadmore">
+        <button class="btn" id="loadMoreBtn">
+          <span>加载更多</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </button>
+      </div>
+
+      <div class="gallery-foot">
+        <span>32 组现场记录 · 持续补充来源与时间</span>
+        <a href="https://my.feishu.cn/share/base/form/shrcnmAKeHs4OrGC1ptZo3Zmjfb?utm_source=jiangxiai&amp;utm_medium=web&amp;utm_campaign=join&amp;utm_content=gallery" target="_blank" rel="noopener" class="gallery-cta">想参加下一场？填写加入表单</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CITY PARTNER RECRUITMENT ============ -->
+  <section class="section section-city" id="city">
+    <div class="container">
+      <div class="city-banner">
+        <div class="city-banner-bg"></div>
+        <div class="city-banner-content">
+          <span class="section-tag light">04 · 城市同行</span>
+          <h2 class="section-title light">让更多江西 AI 人<br /><span class="grad-2">找到长期的同城伙伴</span></h2>
+
+          <div class="city-blocks">
+            <div class="city-block">
+              <h4>已有公开记录</h4>
+              <div class="city-tags">
+                <span>南昌</span><span>九江</span><span>赣州</span><span>宜春</span><span>抚州</span><span>景德镇</span>
+              </div>
+            </div>
+            <div class="city-block">
+              <h4>继续开放</h4>
+              <div class="city-tags">
+                <span>江西其他城市</span><span>省外江西人社群</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="city-rights">
+            <h4>我们提供的协作支持</h4>
+            <ol>
+              <li><strong>交流工具包</strong>共享开源代码、工作流模板与实践复盘笔记</li>
+              <li><strong>同行协同</strong>接入全省技术同行网络，跨城市联合策划技术沙龙</li>
+              <li><strong>方案探讨</strong>按具体技术议题交流讲师与落地方案经验</li>
+            </ol>
+          </div>
+
+          <a href="https://my.feishu.cn/share/base/form/shrcnmAKeHs4OrGC1ptZo3Zmjfb?utm_source=jiangxiai&amp;utm_medium=web&amp;utm_campaign=join&amp;utm_content=city_lead" target="_blank" rel="noopener" class="btn btn-primary">申请成为城市交流发起人</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section-faq" id="faq">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-tag">05 · 常见问题</span>
+        <h2 class="section-title">关于加入，<br />你想知道的都在这</h2>
+        <p class="section-sub">加入、活动与合作的必要说明。</p>
+      </div>
+
+      <div class="faq-grid">
+        <details class="faq-item" open>
+          <summary><h3>这里适合什么样的人加入与交流？</h3></summary>
+          <p>无论你是 AI 开发者、探索技术提效的创业者，还是在校学生、在外江西老乡，只要关注 AI 与落地实践，都欢迎加入。个人进交流圈，方案探讨走交流通道，想在同城办沙龙可申请<a href="#city">城市发起人</a>。</p>
+        </details>
+
+        <details class="faq-item">
+          <summary><h3>参与交流或加入社群需要费用吗？</h3></summary>
+          <p>完全免费。个人博客与社群交流均为非营利性质；若涉及线下沙龙等场地物料实际硬性开支，均由参与者自愿按 AA 制成本分摊，绝不设任何营利项目。</p>
+        </details>
+
+        <details class="faq-item">
+          <summary><h3>通常会举办哪些线下交流活动？</h3></summary>
+          <p>已在南昌、九江、赣州、宜春、抚州与景德镇举办过多期同城沙龙、赣客松实操局、一人公司见面会等，最新场次以<a href="events.html">实战见闻</a>页通知为准。</p>
+        </details>
+
+        <details class="faq-item">
+          <summary><h3>如何探讨 AI 技术落地与实践共创？</h3></summary>
+          <p>可填写<a href="https://my.feishu.cn/share/base/form/shrcnmAKeHs4OrGC1ptZo3Zmjfb?utm_source=jiangxiai&utm_medium=web&utm_campaign=enterprise&utm_content=faq" target="_blank" rel="noopener">飞书表单</a>或直接添加微信备注“技术探讨”。我们通常在 1 个工作日内回复，共同从技术角度判断可行性与实施路径。</p>
+        </details>
+
+        <details class="faq-item">
+          <summary><h3>江西 AI 圈与各实践板块是什么关系？</h3></summary>
+          <p>江西 AI 圈是生态连接纽带，协同板块包括一人公司实践、同城沙龙、赣客松与技能研习，共同记录本土 AI 探索。可在<a href="ecosystem.html">生态体系页</a>查看各板块的公开定位。</p>
+        </details>
+
+        <details class="faq-item">
+          <summary><h3>如何认识更多江西籍 AI 技术同行？</h3></summary>
+          <p>可查阅<a href="talents.html">同行名录</a>，整理了多位公开活跃的江西籍 AI 创业者与技术团队负责人的代表经历，方便同行互相连接。</p>
+        </details>
+      </div>
+
+      <div class="faq-cta">
+        <a href="#join" class="btn btn-primary">没找到答案？直接联系交流</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA / JOIN ============ -->
+  <section class="section section-cta" id="join">
+    <div class="container">
+      <div class="cta-head">
+        <span class="section-tag">06 · 直接开始</span>
+        <h2 class="section-title">现在，选择你的入口</h2>
+        <p class="cta-desc">
+          同行交流、方案探讨与一人公司（OPC）实践分别进入对应通道。
+        </p>
+      </div>
+
+      <div class="cta-wrap">
+        <!-- WeChat QR card -->
+        <div class="cta-qr">
+          <span class="qr-eyebrow">微信直连</span>
+          <h3>扫码添加微信</h3>
+          <p class="qr-desc">备注 <strong>"技术探讨 / 所在城市 + AI"</strong>。电脑访问可扫码添加；手机访问请直接选择下方入口。</p>
+          <div class="qr-frame">
+            <div class="qr-corners">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <picture>
+  <source srcset="img/wechat-qr.webp" type="image/webp" />
+  <img src="img/wechat-qr.webp" width="500" height="500" alt="智能实战笔记 · 江西 AI 圈 微信二维码" />
+</picture>
+            <div class="qr-logo-mark">莫西AI · 智能实战笔记</div>
+          </div>
+          <p class="qr-mobile-tip">📱 手机访问长按二维码可直接识别或保存</p>
+          <a href="https://tokendeep.feishu.cn/wiki/RYnHw3zpiim3W9kLOXcctta2n6e?utm_source=jiangxiai&utm_medium=web&utm_campaign=join&utm_content=cta_kb" target="_blank" rel="noopener" class="kb-link">
+            <span class="kb-text">
+              <strong>社群知识库</strong>
+              <em>飞书 · 公开资料与活动记录</em>
+            </span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </a>
+        </div>
+
+        <div class="cta-paths" aria-label="选择对接入口">
+          <a href="https://my.feishu.cn/share/base/form/shrcnmAKeHs4OrGC1ptZo3Zmjfb?utm_source=jiangxiai&utm_medium=web&utm_campaign=join&utm_content=individual" target="_blank" rel="noopener" class="cta-path">
+            <span>01</span><div><strong>加入技术交流圈</strong><p>适合 AI 从业者、技术开发者、学生与关注 AI 的江西人。</p></div><em>填写交流表单</em>
+          </a>
+          <a href="https://my.feishu.cn/share/base/form/shrcnmAKeHs4OrGC1ptZo3Zmjfb?utm_source=jiangxiai&utm_medium=web&utm_campaign=enterprise&utm_content=cta" target="_blank" rel="noopener" class="cta-path">
+            <span>02</span><div><strong>探讨落地方案与共创</strong><p>技术落地、智能体、工作流与实践方案探讨。</p></div><em>提交交流需求</em>
+          </a>
+          <a href="opc.html#templates" class="cta-path">
+            <span>03</span><div><strong>进入 OPC 实践探索</strong><p>查看社区空间、探索一人公司技术工作流。</p></div><em>前往 OPC 实践</em>
+          </a>
+          <a href="#city" class="cta-path">
+            <span>04</span><div><strong>成为城市发起人</strong><p>在自己的城市组织长期、真实的技术同行连接。</p></div><em>查看招募说明</em>
+          </a>
+          <p class="cta-response">提交后通常在 1 个工作日内回复。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <img class="brand-logo" src="img/jiangxi-ai-logo-official.webp" width="1440" height="532" alt="江西 AI 圈" loading="lazy" decoding="async" />
+          </div>
+          <p>扎根赣鄱红土地，记录 AI 落地与同行实践。</p>
+        </div>
+        <div class="footer-col">
+          <h5>关于笔记</h5>
+          <ul>
+            <li><a href="about.html">莫西与 AI 圈</a></li>
+            <li><a href="talents.html">同行名录</a></li>
+            <li><a href="events.html">实战见闻</a></li>
+            <li><a href="changelog.html">更新日志</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>生态探索</h5>
+          <ul>
+            <li><a href="opc.html">一人公司实践（OPC）</a></li>
+            <li><a href="ecosystem.html">赣客松技术沙龙</a></li>
+            <li><a href="ecosystem.html#skills">技能实操研习</a></li>
+            <li><a href="aidaily.html">技术早报</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>方案探讨</h5>
+          <ul>
+            <li><a href="solutions.html#solutions" aria-label="智能体架构实践">智能体架构实践</a></li>
+            <li><a href="solutions.html#solutions" aria-label="岗位实战演练">岗位实战演练</a></li>
+            <li><a href="solutions.html#solutions" aria-label="视频内容工作流">视频内容工作流</a></li>
+            <li><a href="solutions.html#solutions" aria-label="高校实训交流">高校实训交流</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>交流连接</h5>
+          <ul>
+            <li><a href="index.html#join">微信直接交流</a></li>
+            <li><a href="index.html#city">城市交流发起人</a></li>
+            <li><a href="https://tokendeep.feishu.cn/wiki/RYnHw3zpiim3W9kLOXcctta2n6e?utm_source=jiangxiai&utm_medium=web&utm_campaign=footer&utm_content=footer_kb" target="_blank" rel="noopener">飞书知识库</a></li>
+            <li><a href="index.html#join">参与建议反馈</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-disclaimer">免责声明：本站为个人非经营性技术交流博客，记录 AI 落地思考，不提供任何商业经营、付费咨询或中介服务。</p>
+      <div class="footer-bottom">
+        <span>© 2026 莫西AI · 智能实战笔记 · 江西 AI 圈 · 真诚利他 · 长期主义</span>
+        <div class="footer-records">
+          <a class="public-security-record" href="https://beian.mps.gov.cn/#/query/webSearch?code=36012202000676" rel="noopener noreferrer" target="_blank"><img src="img/beian.png" alt="" width="18" height="20" />赣公网安备36012202000676号</a>
+          <a class="public-security-record" href="https://beian.miit.gov.cn/" rel="noopener noreferrer" target="_blank">赣ICP备2026022141号-1</a>
+        </div>
+        <span>赣鄱大地 · 智引未来</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- floating contact bubble -->
+  <a href="#join" class="float-cta" aria-label="联系我们">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span>联系我们</span>
+  </a>
+
+  <!-- lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="活动照片预览" aria-hidden="true">
+    <button class="lb-close" aria-label="关闭"><span aria-hidden="true"></span></button>
+    <button class="lb-prev" aria-label="上一张"><span aria-hidden="true"></span></button>
+    <button class="lb-next" aria-label="下一张"><span aria-hidden="true"></span></button>
+    <figure class="lb-figure">
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+  </div>
+
+  <script src="main.js?v=20260828e"></script>
+</body>
+</html>

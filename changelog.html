@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>站点更新日志与演进记录 ｜ 莫西 · 智能实战笔记</title>
+  <meta name="description" content="《莫西AI·智能实战笔记》个人技术博客更新记录，按版本公开页面新增、功能调整与实战笔记演进。" />
+  <meta name="keywords" content="更新日志,版本记录,莫西AI,智能实战笔记,江西AI圈,一人公司,OPC,技术博客,changelog" />
+  <meta name="baidu-site-verification" content="codeva-hpwYsu64LU" />
+  <!-- 搜索引擎自适应与防转码规范 (Baidu / Mobile) -->
+  <meta name="applicable-device" content="pc,mobile" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <!-- Google Search Console 站长验证预留 -->
+  <meta name="google-site-verification" content="" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://jiangxiai.top/changelog.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="256x256" href="img/jiangxi-ai-icon-official.png" />
+  <link rel="apple-touch-icon" href="img/jiangxi-ai-icon-official.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jiangxiai.top/changelog.html" />
+  <meta property="og:title" content="莫西AI · 智能实战笔记｜站点更新日志与实践演进" />
+  <meta property="og:description" content="按版本公开页面新增、功能调整与实践演进。" />
+  <meta property="og:image" content="https://jiangxiai.top/img/og-cover.jpg" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:site_name" content="莫西AI · 智能实战笔记" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="莫西AI · 智能实战笔记｜站点更新日志与实践演进" />
+  <meta name="twitter:description" content="按版本公开页面新增、功能调整与实践演进。" />
+  <meta name="twitter:image" content="https://jiangxiai.top/img/og-cover.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.loli.net" />
+  <link rel="preconnect" href="https://fonts.loli.net" crossorigin />
+  <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@500;700;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260921v1" />
+
+  <!-- 结构化数据 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "url": "https://jiangxiai.top/changelog.html",
+        "name": "莫西AI · 智能实战笔记｜站点更新日志与实践演进",
+        "description": "《莫西AI·智能实战笔记》个人技术博客更新记录，按版本记录页面新增、功能调整与技术笔记演进。",
+        "isPartOf": { "@type": "WebSite", "url": "https://jiangxiai.top/", "name": "莫西AI · 智能实战笔记" },
+        "breadcrumb": { "@type": "BreadcrumbList", "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://jiangxiai.top/" },
+          { "@type": "ListItem", "position": 2, "name": "更新日志", "item": "https://jiangxiai.top/changelog.html" }
+        ]}
+      }
+    ]
+  }
+  </script>
+
+  <!-- 网站统计：Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xbm9ujg700");
+  </script>
+
+  <!-- 百度统计 -->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement('script');
+      hm.src = 'https://hm.baidu.com/hm.js?73ce09a56fa2438a07367a57c97f3c90';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G5CPYK6K0J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G5CPYK6K0J');
+  </script>
+</head>
+<body class="subpage-v3 page-editorial page-utility">
+  <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">
+        <img class="brand-logo" src="img/jiangxi-ai-logo-official.webp" width="1440" height="532" alt="江西 AI 圈" decoding="async" />
+      </a>
+      <div class="nav-links" id="primaryNav">
+        <a href="index.html">首页</a>
+        <a href="opc.html">一人公司(OPC)</a>
+        <a href="events.html">实战与见闻</a>
+        <a href="solutions.html">落地方案</a>
+        <a href="ecosystem.html">生态体系</a>
+        <a href="about.html">关于莫西</a>
+        <div class="nav-dropdown">
+          <button class="nav-drop-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            更多 <span class="nav-drop-caret" aria-hidden="true"></span>
+          </button>
+          <div class="nav-drop-menu" role="menu">
+            <a href="talents.html" role="menuitem">同行名录</a>
+            <a href="aidaily.html" role="menuitem">技术早报</a>
+            <a href="changelog.html" role="menuitem" class="active" aria-current="page">更新日志</a>
+          </div>
+        </div>
+        <a href="index.html#join" class="nav-cta">交流探讨</a>
+      </div>
+      <button class="nav-toggle" aria-label="菜单" aria-expanded="false" aria-controls="primaryNav" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+  <!-- ============ HERO ============ -->
+  <header class="changelog-hero">
+    <div class="hero-bg" style="position:absolute;inset:0;z-index:-2;"></div>
+    <div class="hero-grid" style="position:absolute;inset:0;z-index:-1;"></div>
+    <div class="container" style="position:relative;">
+      <h1 style="font-family:var(--font-serif);font-size:clamp(28px,5vw,52px);font-weight:900;color:var(--ink-900);margin:16px 0 14px;line-height:1.2;">
+        莫西AI · 更新日志<br /><span class="grad">站点迭代与版本记录</span>
+      </h1>
+      <p class="page-hero-sub" style="max-width:560px;margin:0 auto;font-size:15px;color:var(--ink-500);line-height:1.7;">
+        记录莫西《智能实战笔记》个人技术博客的架构迭代、实战见闻归档与前端体验优化历程。
+      </p>
+      <div class="changelog-stats-wrap">
+        <div class="changelog-stats">
+          <div class="changelog-stat">
+            <strong>15</strong>
+            <span>内容页面</span>
+          </div>
+          <div class="changelog-stat">
+            <strong>v4.5</strong>
+            <span>当前记录版本</span>
+          </div>
+          <div class="changelog-stat">
+            <strong>2026.09</strong>
+            <span>最后登记</span>
+          </div>
+        </div>
+        <p class="hero-data-note">免责声明：版本记录仅用于追踪本站个人技术学习笔记的维护历程。</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ TIMELINE ============ -->
+  <section style="padding:60px 0 80px;">
+    <div class="container">
+      <div class="changelog-timeline">
+
+        <!-- v4.5 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v4.5</span>
+              <span class="cl-date">2026-09-26</span>
+            </div>
+            <h3 class="cl-title">站点架构与导航体验重构 &amp; 本地实战笔记独立归档</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>导航架构升级</strong>：顶部主导航栏重构信息层级（首页 ➔ 一人公司(OPC) ➔ 实战与见闻 ➔ 落地方案 ➔ 生态体系 ➔ 关于莫西 ➔ 更多），突出技术笔记核心脉络；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>本地实战笔记独立归档</strong>：将景德镇瓷都AI探索、赣州技术走访交流、澄迈OPC下沉实践、江西AI生态全景图等 6 篇高价值实战纪实整理归档为独立静态页面；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>静态站点地图与索引结构</strong>：规范各页面 Title 格式（统一遵循《[主题] ｜ 莫西 · 智能实战笔记》命名规范），更新 sitemap.xml 站点地图收录全站 15 个页面；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>样式与可访问性打磨</strong>：优化移动端自适应导航抽屉交互，增强深色文字与浅色背景对比度，保障多端无障碍阅读体验。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v4.4 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v4.4</span>
+              <span class="cl-date">2026-09-21</span>
+            </div>
+            <h3 class="cl-title">全站 HTTPS 升级与工信部/公安备案规范公示</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>备案合规公示</strong>：全站页脚严格按照工信部规范公示个人博客备案号（赣ICP备2026022141号-1）与公安网安备案号（赣公网安备36012202000676号），并配置官方核验直达链接；</li>
+              <li><span class="cl-tag cl-tag-update">升级</span><strong>传输安全强化</strong>：启用全站 HTTPS 严格传输安全协议（HTTP/2、TLS 1.2/1.3），增强个人技术博客访问安全性与加载速度；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>页脚结构精简</strong>：统一全站页脚规范信息，优化各列内容索引排版。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v4.3 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v4.3</span>
+              <span class="cl-date">2026-08-28</span>
+            </div>
+            <h3 class="cl-title">公开媒体报道与行业切磋见闻补全</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>外部报道与学习笔记索引</strong>：整理汇总科技日报、江西日报等公开媒体报道记录，作为本土技术探索的客观资料存照；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>笔记内容真实性核实</strong>：规范文章来源引用与时间标注，注明各项技术交流与沙龙的客观事实边界；</li>
+              <li><span class="cl-tag cl-tag-fix">优化</span><strong>静态化渲染改进</strong>：文章关键段落统一采用语义化 HTML 静态标签渲染，确保无 JS 环境下的可读性与无障碍支持。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v4.2 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v4.2</span>
+              <span class="cl-date">2026-08-27</span>
+            </div>
+            <h3 class="cl-title">全站排版视觉与文字对比度无障碍优化</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-fix">优化</span><strong>配色与可读性提升</strong>：根据 Web 内容无障碍指南（WCAG 2.1 AA），调优全站正文与背景对比度，文字深色化处理；</li>
+              <li><span class="cl-tag cl-tag-fix">修复</span><strong>键盘无障碍导航修复</strong>：修复“跳到主要内容”跳转锚点仅在键盘聚焦时呈现，避免干扰正常阅读；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>视觉层级精简</strong>：移除冗余的装饰性滚动提示，增强移动端文章正文排版行高与段间距；</li>
+              <li><span class="cl-tag cl-tag-update">更新</span><strong>主理人个人信息卡片</strong>：完善主理人莫西个人技术经历简介与 Schema.org Person 结构化数据。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v4.1 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v4.1</span>
+              <span class="cl-date">2026-08-27</span>
+            </div>
+            <h3 class="cl-title">站点视觉形象统一与轻量化静态资源优化</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>视觉元素规范</strong>：全站统一采用高分辨率矢量/WebP 格式技术标识与站点 Favicon；</li>
+              <li><span class="cl-tag cl-tag-fix">优化</span><strong>前端性能优化</strong>：对全站头图及示意图片进行 WebP 现代化无损压缩，首屏静态资源体积减少 90%，显著提升首屏加载性能。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v4.0 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v4.0</span>
+              <span class="cl-date">2026-08-26</span>
+            </div>
+            <h3 class="cl-title">知识框架重构与内容可信度校准</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>内容表述严谨度核准</strong>：全面核实各篇技术笔记中的数字与事实，坚持客观、严谨、不夸大；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>信息架构重组</strong>：按个人学习、技术落地方案探讨、一人公司方法论等维度重新编排首页导读入口；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>一人公司（OPC）板块内容提炼</strong>：聚焦于个人开发者实战工具链、空间探访与技术需求探讨；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>同行名录边界规范</strong>：注明赣籍技术人资料为公开信息整理，非排名且不作商业背书。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v2.5 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v2.5</span>
+              <span class="cl-date">2026-07-12</span>
+            </div>
+            <h3 class="cl-title">页面排版流与交互细节修复</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>内容板块顺序调整</strong>：根据技术读者阅读习惯，将实战见闻记录权重提高，优先呈现高频干货；</li>
+              <li><span class="cl-tag cl-tag-fix">修复</span><strong>链接与锚点修正</strong>：修复部分跨页面锚点跳转定位偏离与移动端交互异常；</li>
+              <li><span class="cl-tag cl-tag-fix">修复</span><strong>语义化标签结构修正</strong>：规范页面各级标题标签（H1-H4）层级，避免标题层级跳跃。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v2.4 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v2.4</span>
+              <span class="cl-date">2026-07-12</span>
+            </div>
+            <h3 class="cl-title">实战见闻板块上线与时间线数据归档</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>实战与见闻页面（events.html）</strong>：采用时间线形式系统归档主理人莫西参与的历次技术交流、同行切磋实录；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>轻量化数据驱动</strong>：引入 events-data.js 本地轻量数据模块，支持按城市与主题维度快速检索见闻笔记；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>静态站点地图扩展</strong>：sitemap.xml 同步补充见闻列表页面收录。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v2.3 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v2.3</span>
+              <span class="cl-date">2026-07-05</span>
+            </div>
+            <h3 class="cl-title">技术演进日志（Changelog）模块上线</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>更新日志模块</strong>：建立结构化更新日志页面，透明记录本站个人技术学习笔记的迭代与演进历程；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>全站页脚索引补充</strong>：全站各页面统一补充更新日志入口。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v2.2 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v2.2</span>
+              <span class="cl-date">2026-07-05</span>
+            </div>
+            <h3 class="cl-title">一人公司（OPC）技术专题与场景探讨板块上线</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>一人公司（OPC）专题页</strong>：整理个人开发者与超级个体在轻量化 AI 研发中的实操工具与办公空间见闻；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>技术需求探讨板块</strong>：整理来自不同行业的 8 条 AI 技术赋能探索方向与场景需求；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>政策与行业资料收录</strong>：收集收录江西省及南昌市有关人工智能发展的公开指导政策要点，方便技术人查阅。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v2.1 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v2.1</span>
+              <span class="cl-date">2026-06-24</span>
+            </div>
+            <h3 class="cl-title">多页面系统架构搭建与 SEO 基础完善</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>专题页面体系</strong>：分流上线生态体系、同行资料、关于主理人、技术方案探讨等多篇独立专题；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>404 容错页</strong>：设计友好的 404 引导页面；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>SEO 与元数据规范</strong>：全站补充完整的 Description、Keywords、Canonical 规范标签；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>结构化数据支持</strong>：引入 Schema.org JSON-LD 结构化数据，提升搜索引擎对博文内容的语义识别效率。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v2.0 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v2.0</span>
+              <span class="cl-date">2026-05-26</span>
+            </div>
+            <h3 class="cl-title">技术博客 2.0 响应式改版</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>全端自适应布局</strong>：采用现代 CSS Grid 与 Flexbox 重构界面，完美适配手机、平板与桌面端；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>现场图文掠影</strong>：整理收录南昌、赣州、九江等地技术交流现场实录照片；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>访问与体验统计</strong>：接入百度统计与现代性能分析工具，监测站点运行稳定性与访问加载表现。</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- v1.0 -->
+        <div class="cl-item reveal">
+          <div class="cl-dot"></div>
+          <div class="cl-card">
+            <div class="cl-card-head">
+              <span class="cl-version">v1.0</span>
+              <span class="cl-date">2026-02-23</span>
+            </div>
+            <h3 class="cl-title">《智能实战笔记》个人技术博客初始版本上线</h3>
+            <ul class="cl-list">
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>站点上线</strong>：个人技术实战笔记正式上线，启用 jiangxiai.top 域名；</li>
+              <li><span class="cl-tag cl-tag-new">新增</span><strong>自动化构建与部署</strong>：建立基于 Git 的轻量化持续部署工作流；</li>
+              <li><span class="cl-tag cl-tag-update">优化</span><strong>持续内容记录</strong>：记录本土技术实践观察、同行交流心得与 AI 工具使用测评。</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <img class="brand-logo" src="img/jiangxi-ai-logo-official.webp" width="1440" height="532" alt="江西 AI 圈" loading="lazy" decoding="async" />
+          </div>
+          <p>扎根赣鄱红土地，记录 AI 落地与同行实践。</p>
+        </div>
+        <div class="footer-col">
+          <h5>关于笔记</h5>
+          <ul>
+            <li><a href="about.html">莫西与 AI 圈</a></li>
+            <li><a href="talents.html">同行名录</a></li>
+            <li><a href="events.html">实战见闻</a></li>
+            <li><a href="changelog.html">更新日志</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>生态探索</h5>
+          <ul>
+            <li><a href="opc.html">一人公司实践（OPC）</a></li>
+            <li><a href="ecosystem.html">赣客松技术沙龙</a></li>
+            <li><a href="ecosystem.html">同行技能学习</a></li>
+            <li><a href="aidaily.html">技术早报</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>方案探讨</h5>
+          <ul>
+            <li><a href="solutions.html#solutions" aria-label="智能体架构实践">智能体架构实践</a></li>
+            <li><a href="solutions.html#solutions" aria-label="岗位实战演练">岗位实战演练</a></li>
+            <li><a href="solutions.html#solutions" aria-label="视频内容工作流">视频内容工作流</a></li>
+            <li><a href="solutions.html#solutions" aria-label="高校实训交流">高校实训交流</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>交流连接</h5>
+          <ul>
+            <li><a href="index.html#join">微信直接交流</a></li>
+            <li><a href="index.html#city">城市交流发起人</a></li>
+            <li><a href="https://tokendeep.feishu.cn/wiki/RYnHw3zpiim3W9kLOXcctta2n6e?utm_source=jiangxiai&utm_medium=web&utm_campaign=footer&utm_content=footer_kb" target="_blank" rel="noopener">飞书知识库</a></li>
+            <li><a href="index.html#join">参与建议反馈</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-disclaimer">免责声明：本站为个人非经营性技术交流博客，记录 AI 落地思考，不提供任何商业经营、付费咨询或中介服务。</p>
+      <div class="footer-bottom">
+        <span>© 2026 莫西AI · 智能实战笔记 · 江西 AI 圈 · 真诚利他 · 长期主义</span>
+        <div class="footer-records">
+          <a class="public-security-record" href="https://beian.mps.gov.cn/#/query/webSearch?code=36012202000676" rel="noopener noreferrer" target="_blank"><img src="img/beian.png" alt="" width="18" height="20" />赣公网安备36012202000676号</a>
+          <a class="public-security-record" href="https://beian.miit.gov.cn/" rel="noopener noreferrer" target="_blank">赣ICP备2026022141号-1</a>
+        </div>
+        <span>赣鄱大地 · 智引未来</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- floating contact bubble -->
+  <a href="index.html#join" class="float-cta" aria-label="联系我们">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span>联系我们</span>
+  </a>
+
+  <script src="main.js?v=20260828e"></script>
+</body>
+</html>

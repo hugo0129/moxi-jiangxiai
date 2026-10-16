@@ -1,0 +1,25 @@
+# 依赖 / 开发工具
+remotion-videos/
+node_modules/
+package-lock.json
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.workbuddy/
+
+# 临时文件
+*.log
+*.tmp
+.cache/
+
+# 本机部署配置（服务器地址等，不进仓库）
+deploy/.env
+.env
+site.tar.gz
+site.tar.gz.sha256

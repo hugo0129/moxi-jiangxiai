@@ -1,0 +1,15 @@
+# ==============================================================================
+# robots.txt for https://jiangxiai.top/
+# 智能实战笔记 | 莫西
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Disallow: /archive/
+Disallow: /*.sh$
+Disallow: /*.bak*
+Disallow: /*.log$
+Disallow: /*.tar.gz$
+
+# Sitemaps
+Sitemap: https://jiangxiai.top/sitemap.xml
